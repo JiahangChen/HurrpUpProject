@@ -18,6 +18,7 @@ class LineRecycleViewFragment : Fragment() {
 //    private lateinit var mContext: Context
     private lateinit var lineRecycleviewCallback : LineRecycleviewCallback
     private lateinit var addStationActivity: AddStationActivity
+    private lateinit var mcontext: Context
 
     interface LineRecycleviewCallback {
         fun lineSelected(lineid : String)
@@ -30,6 +31,7 @@ class LineRecycleViewFragment : Fragment() {
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
+        mcontext = context
         addStationActivity= context as AddStationActivity
 
     }
@@ -42,7 +44,7 @@ class LineRecycleViewFragment : Fragment() {
         val mBinding = DataBindingUtil.inflate<FragmentLineRecycleViewBinding>(
             inflater, R.layout.fragment_line_recycle_view,container,false
         )
-        val adapter = LineListRecycleViewAdapter()
+        val adapter = LineListRecycleViewAdapter(mcontext)
 
         mBinding.rvLineList.adapter = adapter
         adapter.setLineItemClickListener(object: LineListRecycleViewAdapter.IlineItemClickListener {
