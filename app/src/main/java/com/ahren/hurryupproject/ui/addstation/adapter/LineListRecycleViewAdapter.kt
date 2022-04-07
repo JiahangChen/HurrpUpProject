@@ -17,7 +17,7 @@ class LineListRecycleViewAdapter(context: Context) : RecyclerView.Adapter<LineLi
 
     init {
 
-        lineListData = DataReader.getLineData(context)
+        lineListData = DataReader.getLineList(context)
 
     }
 
@@ -38,8 +38,7 @@ class LineListRecycleViewAdapter(context: Context) : RecyclerView.Adapter<LineLi
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.dataBinding.lineName = lineListData[position]
         holder.itemView.setOnClickListener {
-//            lineListData[position]._id.get()
-            lineListData[position].id
+            lineListData[position]._id.get()
                 ?.let { lineid -> lineItemClickListener.onLineItemClickListener(position, lineid) }
         }
     }

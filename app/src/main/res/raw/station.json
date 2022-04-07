@@ -1,0 +1,44 @@
+{
+  "line1": [
+    {
+      "id": "station1",
+      "stationName": "Station 1"
+    },
+    {
+      "id": "station2",
+      "stationName": "Station 2"
+    },
+    {
+      "id": "station3",
+      "stationName": "Station 3"
+    }
+  ],
+  "line2": [
+    {
+      "id": "station4",
+      "stationName": "Station 4"
+    },
+    {
+      "id": "station5",
+      "stationName": "Station 5"
+    },
+    {
+      "id": "station6",
+      "stationName": "Station 6"
+    }
+  ],
+  "line3": [
+    {
+      "id": "station7",
+      "stationName": "Station 7"
+    },
+    {
+      "id": "station8",
+      "stationName": "Station 8"
+    },
+    {
+      "id": "station9",
+      "stationName": "Station 9"
+    }
+  ]
+}

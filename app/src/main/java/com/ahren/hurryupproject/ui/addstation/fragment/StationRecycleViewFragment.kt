@@ -15,10 +15,10 @@ import com.ahren.hurryupproject.ui.addstation.adapter.LineListRecycleViewAdapter
 import com.ahren.hurryupproject.ui.addstation.adapter.StationListRecycleViewAdapter
 
 
-class StationRecycleViewFragment : Fragment() {
-
+class StationRecycleViewFragment(private val lineid : String) : Fragment() {
     private lateinit var mContext: Context
     private lateinit var addStationActivity: AddStationActivity
+    private lateinit var mcontext: Context
 
     interface StationRecycleviewCallback {
         fun stationSelected(stationid : String)
@@ -32,6 +32,7 @@ class StationRecycleViewFragment : Fragment() {
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
+        mcontext = context
         addStationActivity= context as AddStationActivity
 
     }
@@ -44,7 +45,7 @@ class StationRecycleViewFragment : Fragment() {
         val mBinding = DataBindingUtil.inflate<FragmentStationRecycleViewBinding>(
             inflater, R.layout.fragment_station_recycle_view, container, false
         )
-        val adapter = StationListRecycleViewAdapter()
+        val adapter = StationListRecycleViewAdapter(mcontext, lineid)
 
         mBinding.rvStationList.adapter = adapter
         adapter.setStationItemClickListener(object :

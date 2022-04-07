@@ -1,5 +1,6 @@
 package com.ahren.hurryupproject.ui.addstation.adapter
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
@@ -7,16 +8,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ahren.hurryupproject.R
 import com.ahren.hurryupproject.databinding.StationListDatabindingBinding
 import com.ahren.hurryupproject.ui.addstation.bean.StationListBindingData
+import com.ahren.hurryupproject.ui.addstation.datareader.DataReader
 
-class StationListRecycleViewAdapter : RecyclerView.Adapter<StationListRecycleViewAdapter.ViewHolder>() {
+class StationListRecycleViewAdapter(context: Context, private val lineid : String) : RecyclerView.Adapter<StationListRecycleViewAdapter.ViewHolder>() {
 
     private lateinit var stationItemClickListener: StationListRecycleViewAdapter.IstationItemClickListener
-    private val stationListData = ArrayList<StationListBindingData>()
+    private var stationListData = ArrayList<StationListBindingData>()
 
     init {
-        for (i in 1..3) {
-            stationListData.add(StationListBindingData("$i","Station $i "))
-        }
+        stationListData = DataReader.getStationList(context, lineid)
     }
 
     inner class ViewHolder(var dataBinding: StationListDatabindingBinding) : RecyclerView.ViewHolder(dataBinding.root)

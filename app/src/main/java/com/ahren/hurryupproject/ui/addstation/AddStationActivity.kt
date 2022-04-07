@@ -10,7 +10,7 @@ import com.ahren.hurryupproject.ui.addstation.fragment.StationRecycleViewFragmen
 class AddStationActivity : AppCompatActivity(), LineRecycleViewFragment.LineRecycleviewCallback , StationRecycleViewFragment.StationRecycleviewCallback{
 
     private val lineRecycleViewFragment = LineRecycleViewFragment()
-    private val stationRecycleViewFragment = StationRecycleViewFragment()
+//    private val stationRecycleViewFragment = StationRecycleViewFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,17 +19,17 @@ class AddStationActivity : AppCompatActivity(), LineRecycleViewFragment.LineRecy
         val fragmentManager = supportFragmentManager.beginTransaction()
         fragmentManager.add(R.id.add_station_fragment,lineRecycleViewFragment, "line")
         fragmentManager.commitAllowingStateLoss()
-
-
+        title = "Line Name"
 
 
     }
 
     override fun lineSelected(lineid: String) {
         val fragmentManager = supportFragmentManager.beginTransaction()
-        fragmentManager.add(R.id.add_station_fragment,stationRecycleViewFragment, "station")
+        fragmentManager.add(R.id.add_station_fragment,StationRecycleViewFragment(lineid), "station")
         fragmentManager.remove(lineRecycleViewFragment)
         fragmentManager.commitAllowingStateLoss()
+        title = "Station Name"
     }
 
     override fun stationSelected(stationid: String) {
