@@ -35,8 +35,8 @@ class StationListRecycleViewAdapter(context: Context, private val lineid : Strin
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.dataBinding.stationName = stationListData[position]
         holder.itemView.setOnClickListener {
-            stationListData[position]._id.get()
-                ?.let { stationid -> stationItemClickListener.onStationItemClickListener(position, stationid) }
+            stationListData[position]
+                ?.let { stationdata -> stationItemClickListener.onStationItemClickListener(position, stationdata) }
         }
     }
 
@@ -45,7 +45,7 @@ class StationListRecycleViewAdapter(context: Context, private val lineid : Strin
     }
 
     interface IstationItemClickListener {
-        fun onStationItemClickListener(position: Int, stationid: String)
+        fun onStationItemClickListener(position: Int, stationdata: StationListBindingData)
     }
 
     fun setStationItemClickListener(stationItemClickListener: IstationItemClickListener) {

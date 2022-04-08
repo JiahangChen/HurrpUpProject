@@ -1,6 +1,8 @@
 package com.ahren.hurryupproject.ui.addstation.bean
 
 data class StationListDataClass(
-    val id: String,
-    val stationName: String
+    var id: String,
+    var stationName: String,
+    var stationLongitude: Double,
+    var stationLatitude: Double
 )

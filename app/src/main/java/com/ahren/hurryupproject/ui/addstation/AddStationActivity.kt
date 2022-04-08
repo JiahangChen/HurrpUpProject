@@ -1,9 +1,12 @@
 package com.ahren.hurryupproject.ui.addstation
 
+import android.app.Activity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.ahren.hurryupproject.R
+import com.ahren.hurryupproject.ui.addstation.bean.StationListBindingData
 import com.ahren.hurryupproject.ui.addstation.fragment.LineRecycleViewFragment
 import com.ahren.hurryupproject.ui.addstation.fragment.StationRecycleViewFragment
 
@@ -32,7 +35,10 @@ class AddStationActivity : AppCompatActivity(), LineRecycleViewFragment.LineRecy
         title = "Station Name"
     }
 
-    override fun stationSelected(stationid: String) {
+    override fun stationSelected(stationdata: StationListBindingData) {
+        val resultIntent = Intent()
+        resultIntent.putExtra("stationid",stationdata.id)
+        setResult(Activity.RESULT_OK,resultIntent)
         finish()
     }
 

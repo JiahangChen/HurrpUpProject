@@ -11,8 +11,8 @@ import androidx.databinding.DataBindingUtil
 import com.ahren.hurryupproject.R
 import com.ahren.hurryupproject.databinding.FragmentStationRecycleViewBinding
 import com.ahren.hurryupproject.ui.addstation.AddStationActivity
-import com.ahren.hurryupproject.ui.addstation.adapter.LineListRecycleViewAdapter
 import com.ahren.hurryupproject.ui.addstation.adapter.StationListRecycleViewAdapter
+import com.ahren.hurryupproject.ui.addstation.bean.StationListBindingData
 
 
 class StationRecycleViewFragment(private val lineid : String) : Fragment() {
@@ -21,7 +21,7 @@ class StationRecycleViewFragment(private val lineid : String) : Fragment() {
     private lateinit var mcontext: Context
 
     interface StationRecycleviewCallback {
-        fun stationSelected(stationid : String)
+        fun stationSelected(stationdata : StationListBindingData)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,9 +50,9 @@ class StationRecycleViewFragment(private val lineid : String) : Fragment() {
         mBinding.rvStationList.adapter = adapter
         adapter.setStationItemClickListener(object :
             StationListRecycleViewAdapter.IstationItemClickListener {
-            override fun onStationItemClickListener(position: Int, stationid: String) {
-                addStationActivity.stationSelected(stationid)
-                Toast.makeText(mContext, stationid, Toast.LENGTH_SHORT).show()
+            override fun onStationItemClickListener(position: Int, stationdata: StationListBindingData) {
+                addStationActivity.stationSelected(stationdata)
+                Toast.makeText(mContext, stationdata._id.get(), Toast.LENGTH_SHORT).show()
 
 
             }

@@ -36,10 +36,5 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
-        MainViewBinding.floatingCreateStationButton.setOnClickListener {
-
-            val intent = Intent(this, AddStationActivity::class.java)
-            startActivity(intent)
-        }
     }
 }

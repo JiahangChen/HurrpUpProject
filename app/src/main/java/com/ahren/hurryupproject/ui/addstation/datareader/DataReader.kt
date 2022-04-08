@@ -48,7 +48,12 @@ object DataReader {
         val stationListData = ArrayList<StationListBindingData>()
 
         for (i in 0 until tmpStationData.size) {
-            stationListData.add(StationListBindingData(tmpStationData.get(lineid)!![i].id, tmpStationData.get(lineid)!![i].stationName, PatternHelper.getLineColor(lineid)))
+            stationListData.add(StationListBindingData(
+                tmpStationData[lineid]!![i].id,
+                tmpStationData[lineid]!![i].stationName,
+                tmpStationData[lineid]!![i].stationLongitude,
+                tmpStationData[lineid]!![i].stationLatitude,
+                PatternHelper.getLineColor(lineid)))
         }
         return stationListData
     }
