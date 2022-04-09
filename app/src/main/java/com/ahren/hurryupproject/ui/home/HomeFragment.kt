@@ -32,7 +32,7 @@ class HomeFragment : Fragment() {
         super.onCreate(savedInstanceState)
         register = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == RESULT_OK){
-                result.data?.getStringExtra("stationid").let { binding.homeData?.addStation(it!!) }
+                binding.homeData?.addStation(requireContext(), result.data?.getStringExtra("lineid")!!,result.data?.getStringExtra("stationid")!!)
             }
         }
     }

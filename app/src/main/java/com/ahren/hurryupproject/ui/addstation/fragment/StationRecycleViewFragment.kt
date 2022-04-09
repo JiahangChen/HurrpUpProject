@@ -52,7 +52,7 @@ class StationRecycleViewFragment(private val lineid : String) : Fragment() {
             StationListRecycleViewAdapter.IstationItemClickListener {
             override fun onStationItemClickListener(position: Int, stationdata: StationListBindingData) {
                 addStationActivity.stationSelected(stationdata)
-                Toast.makeText(mContext, stationdata._id.get(), Toast.LENGTH_SHORT).show()
+                Toast.makeText(mContext, stationdata._stationId.get(), Toast.LENGTH_SHORT).show()
 
 
             }

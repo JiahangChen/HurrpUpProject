@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ahren.hurryupproject.R
 import com.ahren.hurryupproject.databinding.LineListDatabindingBinding
 import com.ahren.hurryupproject.ui.addstation.bean.LineListBindingData
-import com.ahren.hurryupproject.ui.addstation.datareader.DataReader
+import com.ahren.hurryupproject.ui.addstation.datareader.LineDataReader
 
 class LineListRecycleViewAdapter(context: Context) : RecyclerView.Adapter<LineListRecycleViewAdapter.ViewHolder>() {
 
@@ -17,7 +17,7 @@ class LineListRecycleViewAdapter(context: Context) : RecyclerView.Adapter<LineLi
 
     init {
 
-        lineListData = DataReader.getLineList(context)
+        lineListData = LineDataReader(context).getLineList()
 
     }
 
@@ -38,7 +38,7 @@ class LineListRecycleViewAdapter(context: Context) : RecyclerView.Adapter<LineLi
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.dataBinding.lineName = lineListData[position]
         holder.itemView.setOnClickListener {
-            lineListData[position]._id.get()
+            lineListData[position]._lineId.get()
                 ?.let { lineid -> lineItemClickListener.onLineItemClickListener(position, lineid) }
         }
     }

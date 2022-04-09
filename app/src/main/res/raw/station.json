@@ -1,20 +1,20 @@
 {
   "line1": [
     {
-      "id": "station1",
+      "stationId": "station1",
       "stationName": "Station 1",
       "stationLongitude": "0",
       "stationLatitude": "0"
 
     },
     {
-      "id": "station2",
+      "stationId": "station2",
       "stationName": "Station 2",
       "stationLongitude": "0",
       "stationLatitude": "0"
     },
     {
-      "id": "station3",
+      "stationId": "station3",
       "stationName": "Station 3",
       "stationLongitude": "0",
       "stationLatitude": "0"
@@ -22,19 +22,19 @@
   ],
   "line2": [
     {
-      "id": "station4",
+      "stationId": "station4",
       "stationName": "Station 4",
       "stationLongitude": "0",
       "stationLatitude": "0"
     },
     {
-      "id": "station5",
+      "stationId": "station5",
       "stationName": "Station 5",
       "stationLongitude": "0",
       "stationLatitude": "0"
     },
     {
-      "id": "station6",
+      "stationId": "station6",
       "stationName": "Station 6",
       "stationLongitude": "0",
       "stationLatitude": "0"
@@ -42,19 +42,19 @@
   ],
   "line3": [
     {
-      "id": "station7",
+      "stationId": "station7",
       "stationName": "Station 7",
       "stationLongitude": "0",
       "stationLatitude": "0"
     },
     {
-      "id": "station8",
+      "stationId": "station8",
       "stationName": "Station 8",
       "stationLongitude": "0",
       "stationLatitude": "0"
     },
     {
-      "id": "station9",
+      "stationId": "station9",
       "stationName": "Station 9",
       "stationLongitude": "0",
       "stationLatitude": "0"

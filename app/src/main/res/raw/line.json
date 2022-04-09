@@ -1,14 +1,14 @@
 [
   {
-    "id": "line1",
+    "lineId": "line1",
     "lineName": "Line 1"
   },
   {
-    "id": "line2",
+    "lineId": "line2",
     "lineName": "Line 2"
   },
   {
-    "id": "line3",
+    "lineId": "line3",
     "lineName": "Line 3"
   }
 ]
