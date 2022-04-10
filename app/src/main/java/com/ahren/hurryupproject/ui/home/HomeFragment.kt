@@ -6,35 +6,30 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.TextView
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProvider
 import com.ahren.hurryupproject.R
 import com.ahren.hurryupproject.databinding.FragmentHomeBinding
-import com.ahren.hurryupproject.databinding.FragmentStationRecycleViewBinding
-import com.ahren.hurryupproject.databinding.StationListDatabindingBinding
 import com.ahren.hurryupproject.ui.addstation.AddStationActivity
 
 class HomeFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
+    private lateinit var register : ActivityResultLauncher<Intent>
+
+    private val homeViewModel: HomeViewModel by activityViewModels()
+    private var _homeViewBinding: FragmentHomeBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
-    private val binding get() = _binding!!
+    private val homeViewBinding get() = _homeViewBinding!!
 
-    private lateinit var register : ActivityResultLauncher<Intent>
-
-
-    override fun onCreate(savedInstanceState: Bundle?) {
+        override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        register = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
-            if (result.resultCode == RESULT_OK){
-                binding.homeData?.addStation(requireContext(), result.data?.getStringExtra("lineid")!!,result.data?.getStringExtra("stationid")!!)
-            }
-        }
     }
 
     override fun onCreateView(
@@ -42,35 +37,49 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(HomeDataBinding::class.java)
+        _homeViewBinding = FragmentHomeBinding.inflate(inflater, container, false)
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        register = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+            if (result.resultCode == RESULT_OK){
+                homeViewModel.addStation(requireContext(), result.data?.getStringExtra("lineid")!!, result.data?.getStringExtra("stationid")!!)
+                refreshStationList()
 
-//        val textView: TextView = binding.textHome
-//        homeViewModel.text.observe(viewLifecycleOwner) {
-////            textView.text = it
-//        }
+            }
+        }
+        refreshStationList()
 
-
-
-
-
-
-        binding.floatingCreateStationButton.setOnClickListener {
-
-//            val intent = Intent(context, AddStationActivity::class.java)
+        homeViewBinding.floatingCreateStationButton.setOnClickListener {
 
             register.launch(Intent(requireContext(),AddStationActivity::class.java))
- //           startActivityForResult(intent,1)
+
         }
 
-        return root
+        return homeViewBinding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        _binding = null
+        _homeViewBinding = null
+    }
+
+    fun refreshStationList() {
+        homeViewModel.getStationList().observe(viewLifecycleOwner) {
+            homeViewBinding.textView.text = it[0]._stationName.get()
+            homeViewBinding.textView2.text = it[1]._stationName.get()
+            homeViewBinding.textView3.text = it[2]._stationName.get()
+            homeViewBinding.textView4.text = it[3]._stationName.get()
+            homeViewBinding.textView5.text = it[4]._stationName.get()
+            homeViewBinding.textView.background = it[0]._backgroundColor.get()
+            homeViewBinding.textView2.background = it[1]._backgroundColor.get()
+            homeViewBinding.textView3.background = it[2]._backgroundColor.get()
+            homeViewBinding.textView4.background = it[3]._backgroundColor.get()
+            homeViewBinding.textView5.background = it[4]._backgroundColor.get()
+        }
     }
 }
