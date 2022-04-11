@@ -1,104 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homeconstraintlayout"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
 
-    <data>
-        <variable
-            name="HomeData"
-            type="com.ahren.hurryupproject.ui.home.HomeViewModel" />
-    </data>
+    <TextView
+        android:id="@+id/StationNum2"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/StationNum1" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".ui.home.HomeFragment">
+    <TextView
+        android:id="@+id/StationNum4"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/StationNum3" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="115dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="30dp"
-            android:gravity="center"
-            android:text="@{HomeData.getStation(2)._stationName}"
-            android:background="@color/white"
-            app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+    <TextView
+        android:id="@+id/StationNum1"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="65dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="115dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="30dp"
-            android:gravity="center"
-            android:background="@color/white"
-            android:text="@{HomeData.getStation(4)._stationName}"
-            app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+    <TextView
+        android:id="@+id/StationNum5"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/StationNum4" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="115dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="50dp"
-            android:gravity="center"
-            android:background="@color/white"
-            android:text="@{HomeData.getStation(1)._stationName}"
-            app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/StationNum3"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/StationNum2" />
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="115dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="30dp"
-            android:gravity="center"
-            android:background="@color/white"
-            android:text="@{HomeData.getStation(5)._stationName}"
-            app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="115dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="30dp"
-            android:gravity="center"
-            android:background="@color/white"
-            android:text="@{HomeData.getStation(3)._stationName}"
-            app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.15" />
-
-        <TextView
-            android:id="@+id/youarehere"
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:text="You_are_here"
-            app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
 
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingCreateStationButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="70dp"
-            android:clickable="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@android:drawable/ic_dialog_email" />
+    <TextView
+        android:id="@+id/youarehere"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/purple_200"
+        android:text="You_are_here"
+        app:layout_constraintStart_toEndOf="@+id/StationNum1"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</layout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingCreateStationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="70dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <Button
+        android:id="@+id/stationup"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="5dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Up"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/youarehere"
+        app:layout_constraintEnd_toEndOf="@+id/youarehere"
+        app:layout_constraintStart_toStartOf="@+id/youarehere" />
+
+    <Button
+        android:id="@+id/stationdown"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="Down"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/youarehere"
+        app:layout_constraintStart_toStartOf="@+id/youarehere"
+        app:layout_constraintTop_toBottomOf="@+id/youarehere" />
+
+    <Switch
+        android:id="@+id/startapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Start"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/StationNum5"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
