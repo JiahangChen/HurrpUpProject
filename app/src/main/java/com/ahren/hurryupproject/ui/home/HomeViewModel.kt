@@ -26,6 +26,7 @@ class HomeViewModel(application : Application) : AndroidViewModel(application) {
         MutableLiveData(arrayListOf(emptyStationData, emptyStationData, emptyStationData, emptyStationData, emptyStationData))
     }
     private var stateButtonPosition: Int = 0
+    private var startAppSwitched : Boolean = false
     fun addStation(context: Context, lineid:String, stationid: String) {
         for ( i in 0 until _stationlist.value!!.size) {
             if (_stationlist.value!![i].isEmpty){
@@ -69,6 +70,13 @@ class HomeViewModel(application : Application) : AndroidViewModel(application) {
 
     }
 
+    fun switchAppStart(){
+        startAppSwitched = !startAppSwitched
+    }
+
+    fun getAppStartSwitch(): Boolean {
+        return startAppSwitched
+    }
 
     fun convDpToInt(dpValue: Int): Int {
         return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dpValue.toFloat(), getApplication<Application>().resources.displayMetrics).toInt()

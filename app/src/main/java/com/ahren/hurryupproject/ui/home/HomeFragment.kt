@@ -1,6 +1,9 @@
 package com.ahren.hurryupproject.ui.home
 
+import android.annotation.SuppressLint
 import android.app.Activity.RESULT_OK
+import android.content.ClipData
+import android.content.ClipData.Item
 import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
@@ -9,15 +12,20 @@ import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.CompoundButton
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.Dimension.DP
 import androidx.constraintlayout.widget.ConstraintSet
+import androidx.core.content.ContextCompat
+import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.marginTop
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import com.ahren.hurryupproject.R
 import com.ahren.hurryupproject.databinding.FragmentHomeBinding
 import com.ahren.hurryupproject.ui.addstation.AddStationActivity
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class HomeFragment : Fragment() {
@@ -69,6 +77,25 @@ class HomeFragment : Fragment() {
         homeViewBinding.stationdown.setOnClickListener {
             moveStatePosition(true)
         }
+
+        homeViewBinding.startapp.isChecked = homeViewModel.getAppStartSwitch()
+
+        homeViewBinding.startapp.setOnCheckedChangeListener(object :
+            CompoundButton.OnCheckedChangeListener {
+            @SuppressLint("UseCompatLoadingForDrawables")
+            override fun onCheckedChanged(switchView: CompoundButton?, isChecked: Boolean) {
+                if (isChecked) {
+                    homeViewBinding.floatingCreateStationButton.isEnabled = false
+                    homeViewBinding.stationup.isEnabled = false
+                    homeViewBinding.stationdown.isEnabled = false
+                } else {
+                    homeViewBinding.floatingCreateStationButton.isEnabled = true
+                    homeViewBinding.stationup.isEnabled = true
+                    homeViewBinding.stationdown.isEnabled = true
+                }
+                homeViewModel.switchAppStart()
+            }
+        })
 
         return homeViewBinding.root
     }
