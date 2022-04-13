@@ -14,7 +14,7 @@ import com.ahren.hurryupproject.ui.addstation.datareader.StationDataReader
 class StationListRecycleViewAdapter(context: Context, private val lineid : String) : RecyclerView.Adapter<StationListRecycleViewAdapter.ViewHolder>() {
 
     private lateinit var stationItemClickListener: StationListRecycleViewAdapter.IstationItemClickListener
-    private var stationListData = StationDataReader(context).getStationList(lineid)
+    private val stationListData by lazy { StationDataReader(context).getStationList(lineid) }
 
     inner class ViewHolder(var dataBinding: StationListDatabindingBinding) : RecyclerView.ViewHolder(dataBinding.root)
 

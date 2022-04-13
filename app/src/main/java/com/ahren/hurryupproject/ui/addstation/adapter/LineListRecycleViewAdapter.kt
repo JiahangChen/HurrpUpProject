@@ -13,7 +13,7 @@ import com.ahren.hurryupproject.ui.addstation.datareader.LineDataReader
 class LineListRecycleViewAdapter(context: Context) : RecyclerView.Adapter<LineListRecycleViewAdapter.ViewHolder>() {
 
     private lateinit var lineItemClickListener: IlineItemClickListener
-    private var lineListData = LineDataReader(context).getLineList()
+    private val lineListData by lazy { LineDataReader(context).getLineList() }
 
     inner class ViewHolder(var dataBinding: LineListDatabindingBinding) : RecyclerView.ViewHolder(dataBinding.root)
 

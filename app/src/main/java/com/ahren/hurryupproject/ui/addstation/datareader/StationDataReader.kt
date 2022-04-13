@@ -31,7 +31,7 @@ class StationDataReader(context: Context) {
 
             val _oneStationListData = ArrayList<StationListBindingData>()
 //            _oneStationListData.clear()
-            for (i in 0 until tmpStationData.size) {
+            for (i in 0 until tmpStationData[key]!!.size) {
                 _oneStationListData.add(
                     StationListBindingData(
                         tmpStationData[key]!![i].stationId,

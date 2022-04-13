@@ -34,7 +34,6 @@ class HomeViewModel(application : Application) : AndroidViewModel(application) {
                 break
             }
         }
-
     }
 
     fun getStation(number: Int): StationListBindingData{
@@ -68,6 +67,25 @@ class HomeViewModel(application : Application) : AndroidViewModel(application) {
         }
         return 0
 
+    }
+
+    fun moveStatePosition(direction: Int, dpValue: Int) : Int {
+        if (direction == 1) {
+            if (stateButtonPosition < 5) {
+                if (!_stationlist.value!![stateButtonPosition].isEmpty) {
+                    stateButtonPosition++
+                }
+            }
+        } else {
+            if (direction == 2) {
+                if (stateButtonPosition > 0) {
+                    if (!_stationlist.value!![stateButtonPosition - 1].isEmpty) {
+                        stateButtonPosition--
+                    }
+                }
+            }
+        }
+        return dpValue * stateButtonPosition
     }
 
     fun switchAppStart(){

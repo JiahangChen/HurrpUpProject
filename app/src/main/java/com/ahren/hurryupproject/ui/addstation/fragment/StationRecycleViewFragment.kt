@@ -42,10 +42,10 @@ class StationRecycleViewFragment(private val lineid : String) : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        val adapter by lazy { StationListRecycleViewAdapter(mcontext, lineid) }
         val mBinding = DataBindingUtil.inflate<FragmentStationRecycleViewBinding>(
             inflater, R.layout.fragment_station_recycle_view, container, false
         )
-        val adapter = StationListRecycleViewAdapter(mcontext, lineid)
 
         mBinding.rvStationList.adapter = adapter
         adapter.setStationItemClickListener(object :

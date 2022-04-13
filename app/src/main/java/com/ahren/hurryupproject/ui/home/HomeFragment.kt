@@ -41,6 +41,7 @@ class HomeFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
     }
 
     override fun onCreateView(
@@ -63,6 +64,7 @@ class HomeFragment : Fragment() {
                 }
             }
         refreshStationList()
+        moveStatePosition(0)
 
         homeViewBinding.floatingCreateStationButton.setOnClickListener {
 
@@ -71,28 +73,19 @@ class HomeFragment : Fragment() {
         }
 
         homeViewBinding.stationup.setOnClickListener {
-            moveStatePosition(false)
+            moveStatePosition(2)
         }
 
         homeViewBinding.stationdown.setOnClickListener {
-            moveStatePosition(true)
+            moveStatePosition(1)
         }
 
         homeViewBinding.startapp.isChecked = homeViewModel.getAppStartSwitch()
 
         homeViewBinding.startapp.setOnCheckedChangeListener(object :
             CompoundButton.OnCheckedChangeListener {
-            @SuppressLint("UseCompatLoadingForDrawables")
             override fun onCheckedChanged(switchView: CompoundButton?, isChecked: Boolean) {
-                if (isChecked) {
-                    homeViewBinding.floatingCreateStationButton.isEnabled = false
-                    homeViewBinding.stationup.isEnabled = false
-                    homeViewBinding.stationdown.isEnabled = false
-                } else {
-                    homeViewBinding.floatingCreateStationButton.isEnabled = true
-                    homeViewBinding.stationup.isEnabled = true
-                    homeViewBinding.stationdown.isEnabled = true
-                }
+                setButtonEnablementOnScreen(isChecked)
                 homeViewModel.switchAppStart()
             }
         })
@@ -126,28 +119,78 @@ class HomeFragment : Fragment() {
         }
     }
 
-    fun moveStatePosition(direction: Boolean) {
+    fun moveStatePosition(direction: Int) {
         val StateMovingValue by lazy { homeViewBinding.StationNum2.height + homeViewBinding.StationNum2.marginTop }
 
+        // direction 1 down, 2 up, 0 refresh button
         val marginTopChangedVale by lazy {
-            if (direction) {
-                homeViewModel.getDownState(StateMovingValue)
-            } else {
-                homeViewModel.getUpState(StateMovingValue)
-            }
+            homeViewModel.moveStatePosition(direction, StateMovingValue)
         }
-        val c = ConstraintSet()
-        c.clone(homeViewBinding.homeconstraintlayout)
-        c.connect(
+        val constraintSet = ConstraintSet()
+        constraintSet.clone(homeViewBinding.homeconstraintlayout)
+        constraintSet.connect(
             homeViewBinding.youarehere.id,
             ConstraintSet.TOP,
-            ConstraintSet.PARENT_ID,
+            homeViewBinding.horizontalguideline1.id,
             ConstraintSet.TOP,
-            homeViewBinding.youarehere.marginTop + marginTopChangedVale
+            marginTopChangedVale
         )
-        c.applyTo(homeViewBinding.homeconstraintlayout)
+        constraintSet.applyTo(homeViewBinding.homeconstraintlayout)
+    }
 
-
+    fun setButtonEnablementOnScreen(isEnabled: Boolean) {
+        val actionBarMenu = activity?.findViewById<BottomNavigationView>(R.id.nav_view)?.menu
+        if (isEnabled) {
+            homeViewBinding.floatingCreateStationButton.isEnabled = false
+            homeViewBinding.stationup.isEnabled = false
+            homeViewBinding.stationdown.isEnabled = false
+            actionBarMenu?.findItem(R.id.navigation_collection)?.isEnabled = false
+            actionBarMenu?.findItem(R.id.navigation_setting)?.isEnabled = false
+            actionBarMenu?.findItem(R.id.navigation_home)?.isEnabled = false
+            actionBarMenu?.findItem(R.id.navigation_collection)?.icon =
+                ResourcesCompat.getDrawable(
+                    resources,
+                    R.drawable.ic_lock_black_24dp,
+                    null
+                )
+            actionBarMenu?.findItem(R.id.navigation_setting)?.icon =
+                ResourcesCompat.getDrawable(
+                    resources,
+                    R.drawable.ic_lock_black_24dp,
+                    null
+                )
+            actionBarMenu?.findItem(R.id.navigation_home)?.icon =
+                ResourcesCompat.getDrawable(
+                    resources,
+                    R.drawable.ic_lock_black_24dp,
+                    null
+                )
+        } else {
+            homeViewBinding.floatingCreateStationButton.isEnabled = true
+            homeViewBinding.stationup.isEnabled = true
+            homeViewBinding.stationdown.isEnabled = true
+            actionBarMenu?.findItem(R.id.navigation_collection)?.isEnabled = true
+            actionBarMenu?.findItem(R.id.navigation_setting)?.isEnabled = true
+            actionBarMenu?.findItem(R.id.navigation_home)?.isEnabled = true
+            actionBarMenu?.findItem(R.id.navigation_collection)?.icon =
+                ResourcesCompat.getDrawable(
+                    resources,
+                    R.drawable.ic_like_yellow_24dp,
+                    null
+                )
+            actionBarMenu?.findItem(R.id.navigation_setting)?.icon =
+                ResourcesCompat.getDrawable(
+                    resources,
+                    R.drawable.ic_setting_yellow_24dp,
+                    null
+                )
+            actionBarMenu?.findItem(R.id.navigation_home)?.icon =
+                ResourcesCompat.getDrawable(
+                    resources,
+                    R.drawable.ic_home_black_24dp,
+                    null
+                )
+        }
     }
 
 }

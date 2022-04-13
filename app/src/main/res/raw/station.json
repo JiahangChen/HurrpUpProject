@@ -1,63 +1,3030 @@
 {
   "line1": [
     {
-      "stationId": "station1",
-      "stationName": "Station 1",
-      "stationLongitude": "0",
-      "stationLatitude": "0"
-
+      "stationId": "baoangonglu101",
+      "stationName": "宝安公路",
+      "sequence": "101",
+      "stationLatitude": "31.369858 ",
+      "stationLongitude": "121.430942 ",
+      "linenumber": "1"
     },
     {
-      "stationId": "station2",
-      "stationName": "Station 2",
-      "stationLongitude": "0",
-      "stationLatitude": "0"
+      "stationId": "caobaolu102",
+      "stationName": "漕宝路",
+      "sequence": "102",
+      "stationLatitude": "31.168308 ",
+      "stationLongitude": "121.435039 ",
+      "linenumber": "1"
     },
     {
-      "stationId": "station3",
-      "stationName": "Station 3",
-      "stationLongitude": "0",
-      "stationLatitude": "0"
+      "stationId": "changshulu103",
+      "stationName": "常熟路",
+      "sequence": "103",
+      "stationLatitude": "31.213704 ",
+      "stationLongitude": "121.450182 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "fujinlu104",
+      "stationName": "富锦路",
+      "sequence": "104",
+      "stationLatitude": "31.392434 ",
+      "stationLongitude": "121.424605 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "gongfuxincun105",
+      "stationName": "共富新村",
+      "sequence": "105",
+      "stationLatitude": "31.355205 ",
+      "stationLongitude": "121.434029 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "gongkanglu106",
+      "stationName": "共康路",
+      "sequence": "106",
+      "stationLatitude": "31.319004 ",
+      "stationLongitude": "121.447044 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "hanzhonglu107",
+      "stationName": "汉中路",
+      "sequence": "107",
+      "stationLatitude": "31.241062 ",
+      "stationLongitude": "121.458756 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "hengshanlu108",
+      "stationName": "衡山路",
+      "sequence": "108",
+      "stationLatitude": "31.204982 ",
+      "stationLongitude": "121.446745 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "hulanlu109",
+      "stationName": "呼兰路",
+      "sequence": "109",
+      "stationLatitude": "31.339638 ",
+      "stationLongitude": "121.437755 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "huangbeinanlu110",
+      "stationName": "黄陂南路",
+      "sequence": "110",
+      "stationLatitude": "31.222842 ",
+      "stationLongitude": "121.473260 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "jinjiangleyuan111",
+      "stationName": "锦江乐园",
+      "sequence": "111",
+      "stationLatitude": "31.142223 ",
+      "stationLongitude": "121.414203 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "lianhualu112",
+      "stationName": "莲花路",
+      "sequence": "112",
+      "stationLatitude": "31.130830 ",
+      "stationLongitude": "121.402798 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "pengpuxincun113",
+      "stationName": "彭浦新村",
+      "sequence": "113",
+      "stationLatitude": "31.306690 ",
+      "stationLongitude": "121.448675 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "renminguangchang114",
+      "stationName": "人民广场",
+      "sequence": "114",
+      "stationLatitude": "31.232892 ",
+      "stationLongitude": "121.474496 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "shanxinanlu115",
+      "stationName": "陕西南路",
+      "sequence": "115",
+      "stationLatitude": "31.215839 ",
+      "stationLongitude": "121.458835 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "shanghaihuochezhan116",
+      "stationName": "上海火车站",
+      "sequence": "116",
+      "stationLatitude": "31.248895 ",
+      "stationLongitude": "121.457529 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "shanghaimaxicheng117",
+      "stationName": "上海马戏城",
+      "sequence": "117",
+      "stationLatitude": "31.279592 ",
+      "stationLongitude": "121.452091 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "shanghainanzhan118",
+      "stationName": "上海南站",
+      "sequence": "118",
+      "stationLatitude": "31.154062 ",
+      "stationLongitude": "121.430313 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "shanghaitiyuguan119",
+      "stationName": "上海体育馆",
+      "sequence": "119",
+      "stationLatitude": "31.182469 ",
+      "stationLongitude": "121.437000 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "shenzhuang120",
+      "stationName": "莘庄",
+      "sequence": "120",
+      "stationLatitude": "31.110924 ",
+      "stationLongitude": "121.384999 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "tonghexincun121",
+      "stationName": "通河新村",
+      "sequence": "121",
+      "stationLatitude": "31.331446 ",
+      "stationLongitude": "121.441394 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "waihuanlu122",
+      "stationName": "外环路",
+      "sequence": "122",
+      "stationLatitude": "31.121183 ",
+      "stationLongitude": "121.393221 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "wenshuilu123",
+      "stationName": "汶水路",
+      "sequence": "123",
+      "stationLatitude": "31.292563 ",
+      "stationLongitude": "121.450145 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "xinzhalu124",
+      "stationName": "新闸路",
+      "sequence": "124",
+      "stationLatitude": "31.238599 ",
+      "stationLongitude": "121.468316 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "xujiahui125",
+      "stationName": "徐家汇",
+      "sequence": "125",
+      "stationLatitude": "31.194523 ",
+      "stationLongitude": "121.436761 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "yanchanglu126",
+      "stationName": "延长路",
+      "sequence": "126",
+      "stationLatitude": "31.271806 ",
+      "stationLongitude": "121.455478 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "youyixilu127",
+      "stationName": "友谊西路",
+      "sequence": "127",
+      "stationLatitude": "31.381487 ",
+      "stationLongitude": "121.427904 ",
+      "linenumber": "1"
+    },
+    {
+      "stationId": "zhongshanbeilu128",
+      "stationName": "中山北路",
+      "sequence": "128",
+      "stationLatitude": "31.259183 ",
+      "stationLongitude": "121.459153 ",
+      "linenumber": "1"
     }
   ],
   "line2": [
     {
-      "stationId": "station4",
-      "stationName": "Station 4",
-      "stationLongitude": "0",
-      "stationLatitude": "0"
+      "stationId": "beixinjing101",
+      "stationName": "北新泾",
+      "sequence": "101",
+      "stationLatitude": "31.216442 ",
+      "stationLongitude": "121.374017 ",
+      "linenumber": "2"
     },
     {
-      "stationId": "station5",
-      "stationName": "Station 5",
-      "stationLongitude": "0",
-      "stationLatitude": "0"
+      "stationId": "chuansha102",
+      "stationName": "川沙",
+      "sequence": "102",
+      "stationLatitude": "31.186610 ",
+      "stationLongitude": "121.698061 ",
+      "linenumber": "2"
     },
     {
-      "stationId": "station6",
-      "stationName": "Station 6",
-      "stationLongitude": "0",
-      "stationLatitude": "0"
+      "stationId": "chuangxinzhonglu103",
+      "stationName": "创新中路",
+      "sequence": "103",
+      "stationLatitude": "31.213386 ",
+      "stationLongitude": "121.673890 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "dongchanglu104",
+      "stationName": "东昌路",
+      "sequence": "104",
+      "stationLatitude": "31.233351 ",
+      "stationLongitude": "121.515420 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "guanglanlu105",
+      "stationName": "广兰路",
+      "sequence": "105",
+      "stationLatitude": "31.211007 ",
+      "stationLongitude": "121.620564 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "guanglanlu106",
+      "stationName": "广兰路",
+      "sequence": "106",
+      "stationLatitude": "31.211007 ",
+      "stationLongitude": "121.620564 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "haitiansanlu107",
+      "stationName": "海天三路",
+      "sequence": "107",
+      "stationLatitude": "31.168609 ",
+      "stationLongitude": "121.796832 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "hongqiao2haohangzhanlou108",
+      "stationName": "虹桥2号航站楼",
+      "sequence": "108",
+      "stationLatitude": "31.194193 ",
+      "stationLongitude": "121.326846 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "hongqiaohuochezhan109",
+      "stationName": "虹桥火车站",
+      "sequence": "109",
+      "stationLatitude": "31.193949 ",
+      "stationLongitude": "121.321479 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "huaxiadonglu110",
+      "stationName": "华夏东路",
+      "sequence": "110",
+      "stationLatitude": "31.196800 ",
+      "stationLongitude": "121.680872 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "jiangsulu111",
+      "stationName": "江苏路",
+      "sequence": "111",
+      "stationLatitude": "31.220193 ",
+      "stationLongitude": "121.431286 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "jinkelu112",
+      "stationName": "金科路",
+      "sequence": "112",
+      "stationLatitude": "31.204176 ",
+      "stationLongitude": "121.601977 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "jingansi113",
+      "stationName": "静安寺",
+      "sequence": "113",
+      "stationLatitude": "31.223046 ",
+      "stationLongitude": "121.447473 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "lingkonglu114",
+      "stationName": "凌空路",
+      "sequence": "114",
+      "stationLatitude": "31.192839 ",
+      "stationLongitude": "121.723733 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "longyanglu115",
+      "stationName": "龙阳路",
+      "sequence": "115",
+      "stationLatitude": "31.202813 ",
+      "stationLongitude": "121.557498 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "loushanguanlu116",
+      "stationName": "娄山关路",
+      "sequence": "116",
+      "stationLatitude": "31.211049 ",
+      "stationLongitude": "121.404266 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "lujiazui117",
+      "stationName": "陆家嘴",
+      "sequence": "117",
+      "stationLatitude": "31.237995 ",
+      "stationLongitude": "121.502220 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "nanjingdonglu118",
+      "stationName": "南京东路",
+      "sequence": "118",
+      "stationLatitude": "31.237993 ",
+      "stationLongitude": "121.484278 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "nanjingxilu119",
+      "stationName": "南京西路",
+      "sequence": "119",
+      "stationLatitude": "31.228870 ",
+      "stationLongitude": "121.460734 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "pudongguojijichang120",
+      "stationName": "浦东国际机场",
+      "sequence": "120",
+      "stationLatitude": "31.149329 ",
+      "stationLongitude": "121.806564 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "renminguangchang121",
+      "stationName": "人民广场",
+      "sequence": "121",
+      "stationLatitude": "31.232892 ",
+      "stationLongitude": "121.474496 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "shanghaikejiguan122",
+      "stationName": "上海科技馆",
+      "sequence": "122",
+      "stationLatitude": "31.219280 ",
+      "stationLongitude": "121.544167 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "shijidadao123",
+      "stationName": "世纪大道",
+      "sequence": "123",
+      "stationLatitude": "31.228963 ",
+      "stationLongitude": "121.526895 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "shijigongyuan124",
+      "stationName": "世纪公园",
+      "sequence": "124",
+      "stationLatitude": "31.209589 ",
+      "stationLongitude": "121.550752 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "songhonglu125",
+      "stationName": "淞虹路",
+      "sequence": "125",
+      "stationLatitude": "31.218234 ",
+      "stationLongitude": "121.359199 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "tangzhen126",
+      "stationName": "唐镇",
+      "sequence": "126",
+      "stationLatitude": "31.213732 ",
+      "stationLongitude": "121.656115 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "weininglu127",
+      "stationName": "威宁路",
+      "sequence": "127",
+      "stationLatitude": "31.214825 ",
+      "stationLongitude": "121.387050 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "xujingdong128",
+      "stationName": "徐泾东",
+      "sequence": "128",
+      "stationLatitude": "31.189171 ",
+      "stationLongitude": "121.301074 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "yuandongdadao129",
+      "stationName": "远东大道",
+      "sequence": "129",
+      "stationLatitude": "31.199460 ",
+      "stationLongitude": "121.755576 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "zhangjianggaoke130",
+      "stationName": "张江高科",
+      "sequence": "130",
+      "stationLatitude": "31.201769 ",
+      "stationLongitude": "121.587576 ",
+      "linenumber": "2"
+    },
+    {
+      "stationId": "zhongshangongyuan131",
+      "stationName": "中山公园",
+      "sequence": "131",
+      "stationLatitude": "31.218071 ",
+      "stationLongitude": "121.416475 ",
+      "linenumber": "2"
     }
   ],
   "line3": [
     {
-      "stationId": "station7",
-      "stationName": "Station 7",
-      "stationLongitude": "0",
-      "stationLatitude": "0"
+      "stationId": "baoshanlu101",
+      "stationName": "宝山路",
+      "sequence": "101",
+      "stationLatitude": "31.251559 ",
+      "stationLongitude": "121.476514 ",
+      "linenumber": "3"
     },
     {
-      "stationId": "station8",
-      "stationName": "Station 8",
-      "stationLongitude": "0",
-      "stationLatitude": "0"
+      "stationId": "baoyanglu102",
+      "stationName": "宝杨路",
+      "sequence": "102",
+      "stationLatitude": "31.395550 ",
+      "stationLongitude": "121.479583 ",
+      "linenumber": "3"
     },
     {
-      "stationId": "station9",
-      "stationName": "Station 9",
-      "stationLongitude": "0",
-      "stationLatitude": "0"
+      "stationId": "caoyang103",
+      "stationName": "曹杨路",
+      "sequence": "103",
+      "stationLatitude": "31.238746 ",
+      "stationLongitude": "121.417678 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "caoxilu104",
+      "stationName": "漕溪路",
+      "sequence": "104",
+      "stationLatitude": "31.176635 ",
+      "stationLongitude": "121.438344 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "chifenglu105",
+      "stationName": "赤峰路",
+      "sequence": "105",
+      "stationLatitude": "31.281305 ",
+      "stationLongitude": "121.482449 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "dabaishu106",
+      "stationName": "大柏树",
+      "sequence": "106",
+      "stationLatitude": "31.289359 ",
+      "stationLongitude": "121.483071 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "dongbaoxinglu107",
+      "stationName": "东宝兴路",
+      "sequence": "107",
+      "stationLatitude": "31.260009 ",
+      "stationLongitude": "121.480089 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "hongkouzuqiuchang108",
+      "stationName": "虹口足球场",
+      "sequence": "108",
+      "stationLatitude": "31.270898 ",
+      "stationLongitude": "121.479263 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "hongqiaolu109",
+      "stationName": "虹桥路",
+      "sequence": "109",
+      "stationLatitude": "31.196919 ",
+      "stationLongitude": "121.421594 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "jiangwanzhen110",
+      "stationName": "江湾镇",
+      "sequence": "110",
+      "stationLatitude": "31.305415 ",
+      "stationLongitude": "121.485091 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "jiangyangbeilu111",
+      "stationName": "江杨北路",
+      "sequence": "111",
+      "stationLatitude": "31.407873 ",
+      "stationLongitude": "121.439828 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "jinshajianglu112",
+      "stationName": "金沙江路",
+      "sequence": "112",
+      "stationLatitude": "31.231898 ",
+      "stationLongitude": "121.413002 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "longcaolu113",
+      "stationName": "龙漕路",
+      "sequence": "113",
+      "stationLatitude": "31.169935 ",
+      "stationLongitude": "121.444209 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "shanghaihuochezhan114",
+      "stationName": "上海火车站",
+      "sequence": "114",
+      "stationLatitude": "31.248895 ",
+      "stationLongitude": "121.457529 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "shanghainanzhan115",
+      "stationName": "上海南站",
+      "sequence": "115",
+      "stationLatitude": "31.154062 ",
+      "stationLongitude": "121.430313 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "shilonglu116",
+      "stationName": "石龙路",
+      "sequence": "116",
+      "stationLatitude": "31.157958 ",
+      "stationLongitude": "121.443238 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "shuichanlu117",
+      "stationName": "水产路",
+      "sequence": "117",
+      "stationLatitude": "31.381365 ",
+      "stationLongitude": "121.488168 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "songbinlu118",
+      "stationName": "淞滨路",
+      "sequence": "118",
+      "stationLatitude": "31.370922 ",
+      "stationLongitude": "121.492800 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "songfalu119",
+      "stationName": "淞发路",
+      "sequence": "119",
+      "stationLatitude": "31.345162 ",
+      "stationLongitude": "121.500535 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "tielilu120",
+      "stationName": "铁力路",
+      "sequence": "120",
+      "stationLatitude": "31.408172 ",
+      "stationLongitude": "121.461397 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "yananxilu121",
+      "stationName": "延安西路",
+      "sequence": "121",
+      "stationLatitude": "31.209773 ",
+      "stationLongitude": "121.417082 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "yishanlu122",
+      "stationName": "宜山路",
+      "sequence": "122",
+      "stationLatitude": "31.186335 ",
+      "stationLongitude": "121.427370 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "yingaoxilu123",
+      "stationName": "殷高西路",
+      "sequence": "123",
+      "stationLatitude": "31.319817 ",
+      "stationLongitude": "121.484852 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "youyilu124",
+      "stationName": "友谊路",
+      "sequence": "124",
+      "stationLatitude": "31.404031 ",
+      "stationLongitude": "121.476041 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "zhanghuabang125",
+      "stationName": "张华浜",
+      "sequence": "125",
+      "stationLatitude": "31.358022 ",
+      "stationLongitude": "121.498802 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "changjiangnanlu126",
+      "stationName": "长江南路",
+      "sequence": "126",
+      "stationLatitude": "31.332023 ",
+      "stationLongitude": "121.491588 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "zhenpinglu127",
+      "stationName": "镇坪路",
+      "sequence": "127",
+      "stationLatitude": "31.246649 ",
+      "stationLongitude": "121.430381 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "zhongshangongyuan128",
+      "stationName": "中山公园",
+      "sequence": "128",
+      "stationLatitude": "31.218071 ",
+      "stationLongitude": "121.416475 ",
+      "linenumber": "3"
+    },
+    {
+      "stationId": "zhongtanlu129",
+      "stationName": "中潭路",
+      "sequence": "129",
+      "stationLatitude": "31.254671 ",
+      "stationLongitude": "121.441039 ",
+      "linenumber": "3"
+    }
+  ],
+  "line4": [
+    {
+      "stationId": "baoshanlu101",
+      "stationName": "宝山路",
+      "sequence": "101",
+      "stationLatitude": "31.251559 ",
+      "stationLongitude": "121.476514 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "caoyanglu102",
+      "stationName": "曹杨路",
+      "sequence": "102",
+      "stationLatitude": "31.238746 ",
+      "stationLongitude": "121.417678 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "dalianlu103",
+      "stationName": "大连路",
+      "sequence": "103",
+      "stationLatitude": "31.258000 ",
+      "stationLongitude": "121.513012 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "damuqiaolu104",
+      "stationName": "大木桥路",
+      "sequence": "104",
+      "stationLatitude": "31.194274 ",
+      "stationLongitude": "121.463634 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "donganlu105",
+      "stationName": "东安路",
+      "sequence": "105",
+      "stationLatitude": "31.191049 ",
+      "stationLongitude": "121.454727 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "hailunlu106",
+      "stationName": "海伦路",
+      "sequence": "106",
+      "stationLatitude": "31.259009 ",
+      "stationLongitude": "121.488858 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "hongqiaolu107",
+      "stationName": "虹桥路",
+      "sequence": "107",
+      "stationLatitude": "31.196919 ",
+      "stationLongitude": "121.421594 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "jinshajianglu108",
+      "stationName": "金沙江路",
+      "sequence": "108",
+      "stationLatitude": "31.231898 ",
+      "stationLongitude": "121.413002 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "lancunlu109",
+      "stationName": "蓝村路",
+      "sequence": "109",
+      "stationLatitude": "31.211741 ",
+      "stationLongitude": "121.527846 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "linpinglu110",
+      "stationName": "临平路",
+      "sequence": "110",
+      "stationLatitude": "31.260946 ",
+      "stationLongitude": "121.501028 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "lubanlu111",
+      "stationName": "鲁班路",
+      "sequence": "111",
+      "stationLatitude": "31.199035 ",
+      "stationLongitude": "121.474474 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "nanpudaqiao112",
+      "stationName": "南浦大桥",
+      "sequence": "112",
+      "stationLatitude": "31.208650 ",
+      "stationLongitude": "121.499744 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "pudianlu113",
+      "stationName": "浦电路",
+      "sequence": "113",
+      "stationLatitude": "31.222927 ",
+      "stationLongitude": "121.532017 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "pudongdadao114",
+      "stationName": "浦东大道",
+      "sequence": "114",
+      "stationLatitude": "31.239907 ",
+      "stationLongitude": "121.519479 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "shanghaihuochezhan115",
+      "stationName": "上海火车站",
+      "sequence": "115",
+      "stationLatitude": "31.248895 ",
+      "stationLongitude": "121.457529 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "shanghaitiyuchang116",
+      "stationName": "上海体育场",
+      "sequence": "116",
+      "stationLatitude": "31.185832 ",
+      "stationLongitude": "121.443848 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "shanghaitiyuguan117",
+      "stationName": "上海体育馆",
+      "sequence": "117",
+      "stationLatitude": "31.182469 ",
+      "stationLongitude": "121.437000 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "shijidadao118",
+      "stationName": "世纪大道",
+      "sequence": "118",
+      "stationLatitude": "31.228963 ",
+      "stationLongitude": "121.526895 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "tangqiao119",
+      "stationName": "塘桥",
+      "sequence": "119",
+      "stationLatitude": "31.209521 ",
+      "stationLongitude": "121.518818 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "xizangnanlu120",
+      "stationName": "西藏南路",
+      "sequence": "120",
+      "stationLatitude": "31.202029 ",
+      "stationLongitude": "121.489533 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "yananxilu121",
+      "stationName": "延安西路",
+      "sequence": "121",
+      "stationLatitude": "31.209773 ",
+      "stationLongitude": "121.417082 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "yangshupulu122",
+      "stationName": "杨树浦路",
+      "sequence": "122",
+      "stationLatitude": "31.251958 ",
+      "stationLongitude": "121.517380 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "yishanlu123",
+      "stationName": "宜山路",
+      "sequence": "123",
+      "stationLatitude": "31.186335 ",
+      "stationLongitude": "121.427370 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "zhenpinglu124",
+      "stationName": "镇坪路",
+      "sequence": "124",
+      "stationLatitude": "31.246649 ",
+      "stationLongitude": "121.430381 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "zhongshangongyuan125",
+      "stationName": "中山公园",
+      "sequence": "125",
+      "stationLatitude": "31.218071 ",
+      "stationLongitude": "121.416475 ",
+      "linenumber": "4"
+    },
+    {
+      "stationId": "zhongtanlu126",
+      "stationName": "中潭路",
+      "sequence": "126",
+      "stationLatitude": "31.254671 ",
+      "stationLongitude": "121.441039 ",
+      "linenumber": "4"
+    }
+  ],
+  "line5": [
+    {
+      "stationId": "beiqiao101",
+      "stationName": "北桥",
+      "sequence": "101",
+      "stationLatitude": "31.045051 ",
+      "stationLongitude": "121.410017 ",
+      "linenumber": "5"
+    },
+    {
+      "stationId": "chunshenlu102",
+      "stationName": "春申路",
+      "sequence": "102",
+      "stationLatitude": "31.098298 ",
+      "stationLongitude": "121.385711 ",
+      "linenumber": "5"
+    },
+    {
+      "stationId": "dongchuanlu103",
+      "stationName": "东川路",
+      "sequence": "103",
+      "stationLatitude": "31.018214 ",
+      "stationLongitude": "121.419883 ",
+      "linenumber": "5"
+    },
+    {
+      "stationId": "huaninglu104",
+      "stationName": "华宁路",
+      "sequence": "104",
+      "stationLatitude": "31.007317 ",
+      "stationLongitude": "121.395042 ",
+      "linenumber": "5"
+    },
+    {
+      "stationId": "jianchuanlu105",
+      "stationName": "剑川路",
+      "sequence": "105",
+      "stationLatitude": "31.026483 ",
+      "stationLongitude": "121.416495 ",
+      "linenumber": "5"
+    },
+    {
+      "stationId": "jinpinglu106",
+      "stationName": "金平路",
+      "sequence": "106",
+      "stationLatitude": "31.011051 ",
+      "stationLongitude": "121.410067 ",
+      "linenumber": "5"
+    },
+    {
+      "stationId": "minhangkaifaqu107",
+      "stationName": "闵行开发区",
+      "sequence": "107",
+      "stationLatitude": "31.000653 ",
+      "stationLongitude": "121.369879 ",
+      "linenumber": "5"
+    },
+    {
+      "stationId": "shenzhuang108",
+      "stationName": "莘庄",
+      "sequence": "108",
+      "stationLatitude": "31.110924 ",
+      "stationLongitude": "121.384999 ",
+      "linenumber": "5"
+    },
+    {
+      "stationId": "wenjinglu109",
+      "stationName": "文井路",
+      "sequence": "109",
+      "stationLatitude": "31.003543 ",
+      "stationLongitude": "121.380705 ",
+      "linenumber": "5"
+    },
+    {
+      "stationId": "yindoulu110",
+      "stationName": "银都路",
+      "sequence": "110",
+      "stationLatitude": "31.089334 ",
+      "stationLongitude": "121.390277 ",
+      "linenumber": "5"
+    },
+    {
+      "stationId": "zhuanqiao111",
+      "stationName": "颛桥",
+      "sequence": "111",
+      "stationLatitude": "31.066942 ",
+      "stationLongitude": "121.401913 ",
+      "linenumber": "5"
+    }
+  ],
+  "line6": [
+    {
+      "stationId": "beiyangjinglu101",
+      "stationName": "北洋泾路",
+      "sequence": "101",
+      "stationLatitude": "31.239241 ",
+      "stationLongitude": "121.552807 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "boxinglu102",
+      "stationName": "博兴路",
+      "sequence": "102",
+      "stationLatitude": "31.263954 ",
+      "stationLongitude": "121.586945 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "depinglu103",
+      "stationName": "德平路",
+      "sequence": "103",
+      "stationLatitude": "31.245305 ",
+      "stationLongitude": "121.564155 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "dongfangtiyuzhongxin104",
+      "stationName": "东方体育中心",
+      "sequence": "104",
+      "stationLatitude": "31.153615 ",
+      "stationLongitude": "121.480468 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "dongjinglu105",
+      "stationName": "东靖路",
+      "sequence": "105",
+      "stationLatitude": "31.290890 ",
+      "stationLongitude": "121.588814 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "dongminglu106",
+      "stationName": "东明路",
+      "sequence": "106",
+      "stationLatitude": "31.172531 ",
+      "stationLongitude": "121.510946 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "gangchenglu107",
+      "stationName": "港城路",
+      "sequence": "107",
+      "stationLatitude": "31.353027 ",
+      "stationLongitude": "121.574695 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "gaokexilu108",
+      "stationName": "高科西路",
+      "sequence": "108",
+      "stationLatitude": "31.185565 ",
+      "stationLongitude": "121.509846 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "gaoqinglu109",
+      "stationName": "高青路",
+      "sequence": "109",
+      "stationLatitude": "31.159528 ",
+      "stationLongitude": "121.515725 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "hangjinlu110",
+      "stationName": "航津路",
+      "sequence": "110",
+      "stationLatitude": "31.335382 ",
+      "stationLongitude": "121.593995 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "huaxiaxilu111",
+      "stationName": "华夏西路",
+      "sequence": "111",
+      "stationLatitude": "31.149851 ",
+      "stationLongitude": "121.514597 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "jinqiaolu112",
+      "stationName": "金桥路",
+      "sequence": "112",
+      "stationLatitude": "31.257185 ",
+      "stationLongitude": "121.581896 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "jufenglu113",
+      "stationName": "巨峰路",
+      "sequence": "113",
+      "stationLatitude": "31.280517 ",
+      "stationLongitude": "121.589019 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "lancunlu114",
+      "stationName": "蓝村路",
+      "sequence": "114",
+      "stationLatitude": "31.211741 ",
+      "stationLongitude": "121.527846 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "linyixincun115",
+      "stationName": "临沂新村",
+      "sequence": "115",
+      "stationLatitude": "31.193226 ",
+      "stationLongitude": "121.516520 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "lingyannanlu116",
+      "stationName": "灵岩南路",
+      "sequence": "116",
+      "stationLatitude": "31.148730 ",
+      "stationLongitude": "121.495107 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "minshenglu117",
+      "stationName": "民生路",
+      "sequence": "117",
+      "stationLatitude": "31.235872 ",
+      "stationLongitude": "121.543473 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "pudianlu118",
+      "stationName": "浦电路",
+      "sequence": "118",
+      "stationLatitude": "31.222927 ",
+      "stationLongitude": "121.532017 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "shanghaiertongyixuezhongxin119",
+      "stationName": "上海儿童医学中心",
+      "sequence": "119",
+      "stationLatitude": "31.203515 ",
+      "stationLongitude": "121.523258 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "shangnanlu120",
+      "stationName": "上南路",
+      "sequence": "120",
+      "stationLatitude": "31.149154 ",
+      "stationLongitude": "121.506380 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "shijidadao121",
+      "stationName": "世纪大道",
+      "sequence": "121",
+      "stationLatitude": "31.228963 ",
+      "stationLongitude": "121.526895 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "waigaoqiaobaoshuiqubei122",
+      "stationName": "外高桥保税区北",
+      "sequence": "122",
+      "stationLatitude": "31.347771 ",
+      "stationLongitude": "121.586947 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "waigaoqiaobaoshuiqunan123",
+      "stationName": "外高桥保税区南",
+      "sequence": "123",
+      "stationLatitude": "31.321470 ",
+      "stationLongitude": "121.602083 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "wulianlu124",
+      "stationName": "五莲路",
+      "sequence": "124",
+      "stationLatitude": "31.271906 ",
+      "stationLongitude": "121.588078 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "wuzhoudadao125",
+      "stationName": "五洲大道",
+      "sequence": "125",
+      "stationLatitude": "31.302705 ",
+      "stationLongitude": "121.589332 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "yuanshentiyuzhongxin126",
+      "stationName": "源深体育中心",
+      "sequence": "126",
+      "stationLatitude": "31.232965 ",
+      "stationLongitude": "121.534397 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "yunshanlu127",
+      "stationName": "云山路",
+      "sequence": "127",
+      "stationLatitude": "31.250391 ",
+      "stationLongitude": "121.572879 ",
+      "linenumber": "6"
+    },
+    {
+      "stationId": "zhouhailu128",
+      "stationName": "洲海路",
+      "sequence": "128",
+      "stationLatitude": "31.312434 ",
+      "stationLongitude": "121.589398 ",
+      "linenumber": "6"
+    }
+  ],
+  "line7": [
+    {
+      "stationId": "changpinglu101",
+      "stationName": "昌平路",
+      "sequence": "101",
+      "stationLatitude": "31.234120 ",
+      "stationLongitude": "121.442319 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "changshulu102",
+      "stationName": "常熟路",
+      "sequence": "102",
+      "stationLatitude": "31.213704 ",
+      "stationLongitude": "121.450182 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "changzhonglu103",
+      "stationName": "场中路",
+      "sequence": "103",
+      "stationLatitude": "31.303877 ",
+      "stationLongitude": "121.413690 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "dachangzhen104",
+      "stationName": "大场镇",
+      "sequence": "104",
+      "stationLatitude": "31.293625 ",
+      "stationLongitude": "121.416477 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "dahuasanlu105",
+      "stationName": "大华三路",
+      "sequence": "105",
+      "stationLatitude": "31.273935 ",
+      "stationLongitude": "121.423062 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "donganlu106",
+      "stationName": "东安路",
+      "sequence": "106",
+      "stationLatitude": "31.191049 ",
+      "stationLongitude": "121.454727 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "fanghualu107",
+      "stationName": "芳华路",
+      "sequence": "107",
+      "stationLatitude": "31.193192 ",
+      "stationLongitude": "121.550069 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "gaokexilu108",
+      "stationName": "高科西路",
+      "sequence": "108",
+      "stationLatitude": "31.185565 ",
+      "stationLongitude": "121.509846 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "gucungongyuan109",
+      "stationName": "顾村公园",
+      "sequence": "109",
+      "stationLatitude": "31.344913 ",
+      "stationLongitude": "121.372685 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "houtan110",
+      "stationName": "后滩",
+      "sequence": "110",
+      "stationLatitude": "31.171983 ",
+      "stationLongitude": "121.473533 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "huamulu111",
+      "stationName": "花木路",
+      "sequence": "111",
+      "stationLatitude": "31.211214 ",
+      "stationLongitude": "121.562802 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "jinxiulu112",
+      "stationName": "锦绣路",
+      "sequence": "112",
+      "stationLatitude": "31.187531 ",
+      "stationLongitude": "121.539978 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "jingansi113",
+      "stationName": "静安寺",
+      "sequence": "113",
+      "stationLatitude": "31.223046 ",
+      "stationLongitude": "121.447473 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "langaolu114",
+      "stationName": "岚皋路",
+      "sequence": "114",
+      "stationLatitude": "31.256332 ",
+      "stationLongitude": "121.421897 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "liuhang115",
+      "stationName": "刘行",
+      "sequence": "115",
+      "stationLatitude": "31.357664 ",
+      "stationLongitude": "121.362287 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "longhuazhonglu116",
+      "stationName": "龙华中路",
+      "sequence": "116",
+      "stationLatitude": "31.185069 ",
+      "stationLongitude": "121.457183 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "longyanglu117",
+      "stationName": "龙阳路",
+      "sequence": "117",
+      "stationLatitude": "31.202813 ",
+      "stationLongitude": "121.557498 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "luonanxincun118",
+      "stationName": "罗南新村",
+      "sequence": "118",
+      "stationLatitude": "31.388460 ",
+      "stationLongitude": "121.357652 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "meilanhu119",
+      "stationName": "美兰湖",
+      "sequence": "119",
+      "stationLatitude": "31.401933 ",
+      "stationLongitude": "121.349903 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "nanchenlu120",
+      "stationName": "南陈路",
+      "sequence": "120",
+      "stationLatitude": "31.321319 ",
+      "stationLongitude": "121.398681 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "panguanglu121",
+      "stationName": "潘广路",
+      "sequence": "121",
+      "stationLatitude": "31.364270 ",
+      "stationLongitude": "121.355743 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "qihualu122",
+      "stationName": "祁华路",
+      "sequence": "122",
+      "stationLatitude": "31.322445 ",
+      "stationLongitude": "121.373545 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "shangdalu123",
+      "stationName": "上大路",
+      "sequence": "123",
+      "stationLatitude": "31.315554 ",
+      "stationLongitude": "121.408243 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "shanghaidaxue124",
+      "stationName": "上海大学",
+      "sequence": "124",
+      "stationLatitude": "31.320513 ",
+      "stationLongitude": "121.388710 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "xincunlu125",
+      "stationName": "新村路",
+      "sequence": "125",
+      "stationLatitude": "31.263904 ",
+      "stationLongitude": "121.422600 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "hangzhilu126",
+      "stationName": "行知路",
+      "sequence": "126",
+      "stationLatitude": "31.284976 ",
+      "stationLongitude": "121.421636 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "yanggaonanlu127",
+      "stationName": "杨高南路",
+      "sequence": "127",
+      "stationLatitude": "31.187574 ",
+      "stationLongitude": "121.525141 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "yaohualu128",
+      "stationName": "耀华路",
+      "sequence": "128",
+      "stationLatitude": "31.178449 ",
+      "stationLongitude": "121.494558 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "yuntailu129",
+      "stationName": "云台路",
+      "sequence": "129",
+      "stationLatitude": "31.182132 ",
+      "stationLongitude": "121.500696 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "changqinglu130",
+      "stationName": "长清路",
+      "sequence": "130",
+      "stationLatitude": "31.174594 ",
+      "stationLongitude": "121.486102 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "changshoulu131",
+      "stationName": "长寿路",
+      "sequence": "131",
+      "stationLatitude": "31.240367 ",
+      "stationLongitude": "121.438338 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "zhaojiabanglu132",
+      "stationName": "肇嘉浜路",
+      "sequence": "132",
+      "stationLatitude": "31.199134 ",
+      "stationLongitude": "121.450025 ",
+      "linenumber": "7"
+    },
+    {
+      "stationId": "zhenpinglu133",
+      "stationName": "镇坪路",
+      "sequence": "133",
+      "stationLatitude": "31.246649 ",
+      "stationLongitude": "121.430381 ",
+      "linenumber": "7"
+    }
+  ],
+  "line8": [
+    {
+      "stationId": "anshanxincun101",
+      "stationName": "鞍山新村",
+      "sequence": "101",
+      "stationLatitude": "31.273205 ",
+      "stationLongitude": "121.509518 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "shendugonglu102",
+      "stationName": "沈杜公路",
+      "sequence": "102",
+      "stationLatitude": "31.061341 ",
+      "stationLongitude": "121.512253 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "chengshanlu103",
+      "stationName": "成山路",
+      "sequence": "103",
+      "stationLatitude": "31.170842 ",
+      "stationLongitude": "121.496164 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "dashijie104",
+      "stationName": "大世界",
+      "sequence": "104",
+      "stationLatitude": "31.227381 ",
+      "stationLongitude": "121.479306 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "dongfangtiyuzhongxin105",
+      "stationName": "东方体育中心",
+      "sequence": "105",
+      "stationLatitude": "31.153615 ",
+      "stationLongitude": "121.480468 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "hongkouzuqiuchang106",
+      "stationName": "虹口足球场",
+      "sequence": "106",
+      "stationLatitude": "31.270898 ",
+      "stationLongitude": "121.479263 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "huangxinggongyuan107",
+      "stationName": "黄兴公园",
+      "sequence": "107",
+      "stationLatitude": "31.295867 ",
+      "stationLongitude": "121.533218 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "huangxinglu108",
+      "stationName": "黄兴路",
+      "sequence": "108",
+      "stationLatitude": "31.278692 ",
+      "stationLongitude": "121.527937 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "jiangpulu109",
+      "stationName": "江浦路",
+      "sequence": "109",
+      "stationLatitude": "31.275100 ",
+      "stationLongitude": "121.518256 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "jiangyuelu110",
+      "stationName": "江月路",
+      "sequence": "110",
+      "stationLatitude": "31.084263 ",
+      "stationLongitude": "121.508562 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "laoximen111",
+      "stationName": "老西门",
+      "sequence": "111",
+      "stationLatitude": "31.218929 ",
+      "stationLongitude": "121.482910 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "lianhanglu112",
+      "stationName": "联航路",
+      "sequence": "112",
+      "stationLatitude": "31.073933 ",
+      "stationLongitude": "121.510570 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "lingzhaoxincun113",
+      "stationName": "凌兆新村",
+      "sequence": "113",
+      "stationLatitude": "31.141059 ",
+      "stationLongitude": "121.489706 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "luhenglu114",
+      "stationName": "芦恒路",
+      "sequence": "114",
+      "stationLatitude": "31.119260 ",
+      "stationLongitude": "121.497775 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "lujiabanglu115",
+      "stationName": "陆家浜路",
+      "sequence": "115",
+      "stationLatitude": "31.211668 ",
+      "stationLongitude": "121.486141 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "nenjianglu116",
+      "stationName": "嫩江路",
+      "sequence": "116",
+      "stationLatitude": "31.314850 ",
+      "stationLongitude": "121.532088 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "pujiangzhen117",
+      "stationName": "浦江镇",
+      "sequence": "117",
+      "stationLatitude": "31.096560 ",
+      "stationLongitude": "121.506290 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "qufulu118",
+      "stationName": "曲阜路",
+      "sequence": "118",
+      "stationLatitude": "31.242395 ",
+      "stationLongitude": "121.471485 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "quyanglu119",
+      "stationName": "曲阳路",
+      "sequence": "119",
+      "stationLatitude": "31.276488 ",
+      "stationLongitude": "121.490473 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "renminguangchang120",
+      "stationName": "人民广场",
+      "sequence": "120",
+      "stationLatitude": "31.232892 ",
+      "stationLongitude": "121.474496 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "shiguanglu121",
+      "stationName": "市光路",
+      "sequence": "121",
+      "stationLatitude": "31.322441 ",
+      "stationLongitude": "121.532045 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "sipinglu122",
+      "stationName": "四平路",
+      "sequence": "122",
+      "stationLatitude": "31.275148 ",
+      "stationLongitude": "121.501601 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "xizangbeilu123",
+      "stationName": "西藏北路",
+      "sequence": "123",
+      "stationLatitude": "31.263498 ",
+      "stationLongitude": "121.468741 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "xizangnanlu124",
+      "stationName": "西藏南路",
+      "sequence": "124",
+      "stationLatitude": "31.202029 ",
+      "stationLongitude": "121.489533 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "xiangyinlu125",
+      "stationName": "翔殷路",
+      "sequence": "125",
+      "stationLatitude": "31.304952 ",
+      "stationLongitude": "121.532011 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "yanjizhonglu126",
+      "stationName": "延吉中路",
+      "sequence": "126",
+      "stationLatitude": "31.288657 ",
+      "stationLongitude": "121.534948 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "yangsi127",
+      "stationName": "杨思",
+      "sequence": "127",
+      "stationLatitude": "31.161075 ",
+      "stationLongitude": "121.493726 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "yaohualu128",
+      "stationName": "耀华路",
+      "sequence": "128",
+      "stationLatitude": "31.178449 ",
+      "stationLongitude": "121.494558 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "zhonghuayishugong129",
+      "stationName": "中华艺术宫",
+      "sequence": "129",
+      "stationLatitude": "31.185702 ",
+      "stationLongitude": "121.494176 ",
+      "linenumber": "8"
+    },
+    {
+      "stationId": "zhongxinglu130",
+      "stationName": "中兴路",
+      "sequence": "130",
+      "stationLatitude": "31.253130 ",
+      "stationLongitude": "121.468893 ",
+      "linenumber": "8"
+    }
+  ],
+  "line9": [
+    {
+      "stationId": "caohejingkaifaqu101",
+      "stationName": "漕河泾开发区",
+      "sequence": "101",
+      "stationLatitude": "31.170480 ",
+      "stationLongitude": "121.397601 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "dapuqiao102",
+      "stationName": "打浦桥",
+      "sequence": "102",
+      "stationLatitude": "31.206165 ",
+      "stationLongitude": "121.468877 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "dongjing103",
+      "stationName": "洞泾",
+      "sequence": "103",
+      "stationLatitude": "31.084475 ",
+      "stationLongitude": "121.230480 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "guilinlu104",
+      "stationName": "桂林路",
+      "sequence": "104",
+      "stationLatitude": "31.174918 ",
+      "stationLongitude": "121.418512 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "hechuanlu105",
+      "stationName": "合川路",
+      "sequence": "105",
+      "stationLatitude": "31.166576 ",
+      "stationLongitude": "121.384582 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "jiashanlu106",
+      "stationName": "嘉善路",
+      "sequence": "106",
+      "stationLatitude": "31.202906 ",
+      "stationLongitude": "121.460783 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "jiuting107",
+      "stationName": "九亭",
+      "sequence": "107",
+      "stationLatitude": "31.137478 ",
+      "stationLongitude": "121.318946 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "lujiabanglu108",
+      "stationName": "陆家浜路",
+      "sequence": "108",
+      "stationLatitude": "31.211668 ",
+      "stationLongitude": "121.486141 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "madanglu109",
+      "stationName": "马当路",
+      "sequence": "109",
+      "stationLatitude": "31.209447 ",
+      "stationLongitude": "121.476777 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "qibao110",
+      "stationName": "七宝",
+      "sequence": "110",
+      "stationLatitude": "31.155470 ",
+      "stationLongitude": "121.349523 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "shangchenglu111",
+      "stationName": "商城路",
+      "sequence": "111",
+      "stationLatitude": "31.230397 ",
+      "stationLongitude": "121.516312 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "sheshan112",
+      "stationName": "佘山",
+      "sequence": "112",
+      "stationLatitude": "31.104687 ",
+      "stationLongitude": "121.229710 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "shijidadao113",
+      "stationName": "世纪大道",
+      "sequence": "113",
+      "stationLatitude": "31.228963 ",
+      "stationLongitude": "121.526895 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "sijing114",
+      "stationName": "泗泾",
+      "sequence": "114",
+      "stationLatitude": "31.118320 ",
+      "stationLongitude": "121.260640 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "songjiangdaxuecheng115",
+      "stationName": "松江大学城",
+      "sequence": "115",
+      "stationLatitude": "31.054132 ",
+      "stationLongitude": "121.232690 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "songjiangnanzhan116",
+      "stationName": "松江南站",
+      "sequence": "116",
+      "stationLatitude": "30.985034 ",
+      "stationLongitude": "121.231129 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "songjiangtiyuzhongxin117",
+      "stationName": "松江体育中心",
+      "sequence": "117",
+      "stationLatitude": "31.016134 ",
+      "stationLongitude": "121.230598 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "songjiangxincheng118",
+      "stationName": "松江新城",
+      "sequence": "118",
+      "stationLatitude": "31.030297 ",
+      "stationLongitude": "121.230747 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "xiaonanmen119",
+      "stationName": "小南门",
+      "sequence": "119",
+      "stationLatitude": "31.217011 ",
+      "stationLongitude": "121.498298 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "xingzhonglu120",
+      "stationName": "星中路",
+      "sequence": "120",
+      "stationLatitude": "31.158204 ",
+      "stationLongitude": "121.368979 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "xujiahui121",
+      "stationName": "徐家汇",
+      "sequence": "121",
+      "stationLatitude": "31.194523 ",
+      "stationLongitude": "121.436761 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "yanggaozhonglu122",
+      "stationName": "杨高中路",
+      "sequence": "122",
+      "stationLatitude": "31.227446 ",
+      "stationLongitude": "121.548594 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "yishanlu123",
+      "stationName": "宜山路",
+      "sequence": "123",
+      "stationLatitude": "31.186335 ",
+      "stationLongitude": "121.427370 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "zhaojiabanglu124",
+      "stationName": "肇嘉浜路",
+      "sequence": "124",
+      "stationLatitude": "31.199134 ",
+      "stationLongitude": "121.450025 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "zhongchunlu125",
+      "stationName": "中春路",
+      "sequence": "125",
+      "stationLatitude": "31.149682 ",
+      "stationLongitude": "121.338306 ",
+      "linenumber": "9"
+    },
+    {
+      "stationId": "zuibaichi126",
+      "stationName": "醉白池",
+      "sequence": "126",
+      "stationLatitude": "31.001071 ",
+      "stationLongitude": "121.229287 ",
+      "linenumber": "9"
+    }
+  ],
+  "line10": [
+    {
+      "stationId": "guoquanlu101",
+      "stationName": "国权路",
+      "sequence": "101",
+      "stationLatitude": "31.289631 ",
+      "stationLongitude": "121.510201 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "hailunlu102",
+      "stationName": "海伦路",
+      "sequence": "102",
+      "stationLatitude": "31.259009 ",
+      "stationLongitude": "121.488858 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "hangzhonglu103",
+      "stationName": "航中路",
+      "sequence": "103",
+      "stationLatitude": "31.165701 ",
+      "stationLongitude": "121.354725 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "hongqiao1haohangzhanlou104",
+      "stationName": "虹桥1号航站楼",
+      "sequence": "104",
+      "stationLatitude": "31.191364 ",
+      "stationLongitude": "121.347410 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "hongqiao2haohangzhanlou105",
+      "stationName": "虹桥2号航站楼",
+      "sequence": "105",
+      "stationLatitude": "31.194193 ",
+      "stationLongitude": "121.326846 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "hongqiaohuochezhan106",
+      "stationName": "虹桥火车站",
+      "sequence": "106",
+      "stationLatitude": "31.193949 ",
+      "stationLongitude": "121.321479 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "hongqiaolu107",
+      "stationName": "虹桥路",
+      "sequence": "107",
+      "stationLatitude": "31.196919 ",
+      "stationLongitude": "121.421594 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "jiangwantiyuchang108",
+      "stationName": "江湾体育场",
+      "sequence": "108",
+      "stationLatitude": "31.303025 ",
+      "stationLongitude": "121.514084 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "jiaotongdaxue109",
+      "stationName": "交通大学",
+      "sequence": "109",
+      "stationLatitude": "31.202204 ",
+      "stationLongitude": "121.434554 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "laoximen110",
+      "stationName": "老西门",
+      "sequence": "110",
+      "stationLatitude": "31.218929 ",
+      "stationLongitude": "121.482910 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "longbaixincun111",
+      "stationName": "龙柏新村",
+      "sequence": "111",
+      "stationLatitude": "31.177233 ",
+      "stationLongitude": "121.370404 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "longxilu112",
+      "stationName": "龙溪路",
+      "sequence": "112",
+      "stationLatitude": "31.194223 ",
+      "stationLongitude": "121.379866 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "nanjingdonglu113",
+      "stationName": "南京东路",
+      "sequence": "113",
+      "stationLatitude": "31.237993 ",
+      "stationLongitude": "121.484278 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "sanmenlu114",
+      "stationName": "三门路",
+      "sequence": "114",
+      "stationLatitude": "31.312977 ",
+      "stationLongitude": "121.508120 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "shanxinanlu115",
+      "stationName": "陕西南路",
+      "sequence": "115",
+      "stationLatitude": "31.215839 ",
+      "stationLongitude": "121.458835 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "shanghaidongwuyuan116",
+      "stationName": "上海动物园",
+      "sequence": "116",
+      "stationLatitude": "31.190289 ",
+      "stationLongitude": "121.367018 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "shanghaitushuguan117",
+      "stationName": "上海图书馆",
+      "sequence": "117",
+      "stationLatitude": "31.208086 ",
+      "stationLongitude": "121.444356 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "shuichenglu118",
+      "stationName": "水城路",
+      "sequence": "118",
+      "stationLatitude": "31.199326 ",
+      "stationLongitude": "121.391858 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "sichuanbeilu119",
+      "stationName": "四川北路",
+      "sequence": "119",
+      "stationLatitude": "31.251992 ",
+      "stationLongitude": "121.484214 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "sipinglu120",
+      "stationName": "四平路",
+      "sequence": "120",
+      "stationLatitude": "31.275148 ",
+      "stationLongitude": "121.501601 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "songyuanlu121",
+      "stationName": "宋园路",
+      "sequence": "121",
+      "stationLatitude": "31.196605 ",
+      "stationLongitude": "121.411952 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "tiantonglu122",
+      "stationName": "天潼路",
+      "sequence": "122",
+      "stationLatitude": "31.244345 ",
+      "stationLongitude": "121.482215 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "tongjidaxue123",
+      "stationName": "同济大学",
+      "sequence": "123",
+      "stationLatitude": "31.282584 ",
+      "stationLongitude": "121.506484 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "wujiaochang124",
+      "stationName": "五角场",
+      "sequence": "124",
+      "stationLatitude": "31.298084 ",
+      "stationLongitude": "121.514649 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "xinjiangwancheng125",
+      "stationName": "新江湾城",
+      "sequence": "125",
+      "stationLatitude": "31.328814 ",
+      "stationLongitude": "121.506596 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "xintiandi126",
+      "stationName": "新天地",
+      "sequence": "126",
+      "stationLatitude": "31.216088 ",
+      "stationLongitude": "121.475153 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "yililu127",
+      "stationName": "伊犁路",
+      "sequence": "127",
+      "stationLatitude": "31.198729 ",
+      "stationLongitude": "121.404139 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "yingaodonglu128",
+      "stationName": "殷高东路",
+      "sequence": "128",
+      "stationLatitude": "31.322106 ",
+      "stationLongitude": "121.506585 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "youdianxincun129",
+      "stationName": "邮电新村",
+      "sequence": "129",
+      "stationLatitude": "31.268550 ",
+      "stationLongitude": "121.494281 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "yuyuan130",
+      "stationName": "豫园",
+      "sequence": "130",
+      "stationLatitude": "31.228259 ",
+      "stationLongitude": "121.487321 ",
+      "linenumber": "10"
+    },
+    {
+      "stationId": "zitenglu131",
+      "stationName": "紫藤路",
+      "sequence": "131",
+      "stationLatitude": "31.169778 ",
+      "stationLongitude": "121.364404 ",
+      "linenumber": "10"
+    }
+  ],
+  "line11": [
+    {
+      "stationId": "anting101",
+      "stationName": "安亭",
+      "sequence": "101",
+      "stationLatitude": "31.288447 ",
+      "stationLongitude": "121.162097 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "baiyinlu102",
+      "stationName": "白银路",
+      "sequence": "102",
+      "stationLatitude": "31.345616 ",
+      "stationLongitude": "121.245212 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "caoyanglu103",
+      "stationName": "曹杨路",
+      "sequence": "103",
+      "stationLatitude": "31.238746 ",
+      "stationLongitude": "121.417678 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "changjidonglu104",
+      "stationName": "昌吉东路",
+      "sequence": "104",
+      "stationLatitude": "31.293595 ",
+      "stationLongitude": "121.200378 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "dishini105",
+      "stationName": "迪士尼",
+      "sequence": "105",
+      "stationLatitude": "31.141409 ",
+      "stationLongitude": "121.668306 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "dongfangtiyuzhongxin106",
+      "stationName": "东方体育中心",
+      "sequence": "106",
+      "stationLatitude": "31.153615 ",
+      "stationLongitude": "121.480468 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "fengqiaolu107",
+      "stationName": "枫桥路",
+      "sequence": "107",
+      "stationLatitude": "31.241973 ",
+      "stationLongitude": "121.411046 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "guangminglu108",
+      "stationName": "光明路",
+      "sequence": "108",
+      "stationLatitude": "31.295734 ",
+      "stationLongitude": "121.117630 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "huaqiao109",
+      "stationName": "花桥",
+      "sequence": "109",
+      "stationLatitude": "31.298605 ",
+      "stationLongitude": "121.104140 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "jiadingbei110",
+      "stationName": "嘉定北",
+      "sequence": "110",
+      "stationLatitude": "31.391496 ",
+      "stationLongitude": "121.237500 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "jiadingxi111",
+      "stationName": "嘉定西",
+      "sequence": "111",
+      "stationLatitude": "31.377132 ",
+      "stationLongitude": "121.227923 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "jiadingxincheng112",
+      "stationName": "嘉定新城",
+      "sequence": "112",
+      "stationLatitude": "31.330085 ",
+      "stationLongitude": "121.254425 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "jiangsulu113",
+      "stationName": "江苏路",
+      "sequence": "113",
+      "stationLatitude": "31.220193 ",
+      "stationLongitude": "121.431286 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "jiaotongdaxue114",
+      "stationName": "交通大学",
+      "sequence": "114",
+      "stationLatitude": "31.202204 ",
+      "stationLongitude": "121.434554 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "kangxingonglu115",
+      "stationName": "康新公路",
+      "sequence": "115",
+      "stationLatitude": "31.130378 ",
+      "stationLongitude": "121.617228 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "liziyuanlu116",
+      "stationName": "李子园路",
+      "sequence": "116",
+      "stationLatitude": "31.268886 ",
+      "stationLongitude": "121.389963 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "longhua117",
+      "stationName": "龙华",
+      "sequence": "117",
+      "stationLatitude": "31.173008 ",
+      "stationLongitude": "121.452814 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "longyaolu118",
+      "stationName": "龙耀路",
+      "sequence": "118",
+      "stationLatitude": "31.160026 ",
+      "stationLongitude": "121.459551 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "longdelu119",
+      "stationName": "隆德路",
+      "sequence": "119",
+      "stationLatitude": "31.230462 ",
+      "stationLongitude": "121.423519 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "luoshanlu120",
+      "stationName": "罗山路",
+      "sequence": "120",
+      "stationLatitude": "31.153303 ",
+      "stationLongitude": "121.593209 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "malu121",
+      "stationName": "马陆",
+      "sequence": "121",
+      "stationLatitude": "31.319365 ",
+      "stationLongitude": "121.276209 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "nanxiang122",
+      "stationName": "南翔",
+      "sequence": "122",
+      "stationLatitude": "31.296998 ",
+      "stationLongitude": "121.323338 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "pusanlu123",
+      "stationName": "浦三路",
+      "sequence": "123",
+      "stationLatitude": "31.150914 ",
+      "stationLongitude": "121.539121 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "qilianshanlu124",
+      "stationName": "祁连山路",
+      "sequence": "124",
+      "stationLatitude": "31.271549 ",
+      "stationLongitude": "121.375907 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "sanlin125",
+      "stationName": "三林",
+      "sequence": "125",
+      "stationLatitude": "31.142967 ",
+      "stationLongitude": "121.511001 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "sanlindong126",
+      "stationName": "三林东",
+      "sequence": "126",
+      "stationLatitude": "31.146510 ",
+      "stationLongitude": "121.523174 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "shanghaiqichecheng127",
+      "stationName": "上海汽车城",
+      "sequence": "127",
+      "stationLatitude": "31.285341 ",
+      "stationLongitude": "121.180833 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "shanghaisaichechang128",
+      "stationName": "上海赛车场",
+      "sequence": "128",
+      "stationLatitude": "31.331839 ",
+      "stationLongitude": "121.226133 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "shanghaixizhan129",
+      "stationName": "上海西站",
+      "sequence": "129",
+      "stationLatitude": "31.262640 ",
+      "stationLongitude": "121.401413 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "shanghaiyouyongguan130",
+      "stationName": "上海游泳馆",
+      "sequence": "130",
+      "stationLatitude": "31.179017 ",
+      "stationLongitude": "121.441626 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "taopuxincun131",
+      "stationName": "桃浦新村",
+      "sequence": "131",
+      "stationLatitude": "31.281727 ",
+      "stationLongitude": "121.349414 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "wuweilu132",
+      "stationName": "武威路",
+      "sequence": "132",
+      "stationLatitude": "31.277071 ",
+      "stationLongitude": "121.364751 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "xiuyanlu133",
+      "stationName": "秀沿路",
+      "sequence": "133",
+      "stationLatitude": "31.137857 ",
+      "stationLongitude": "121.598769 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "xujiahui134",
+      "stationName": "徐家汇",
+      "sequence": "134",
+      "stationLatitude": "31.194523 ",
+      "stationLongitude": "121.436761 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "yuqiao135",
+      "stationName": "御桥",
+      "sequence": "135",
+      "stationLatitude": "31.158400 ",
+      "stationLongitude": "121.570945 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "yunjinlu136",
+      "stationName": "云锦路",
+      "sequence": "136",
+      "stationLatitude": "31.166400 ",
+      "stationLongitude": "121.458502 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "zhaofenglu137",
+      "stationName": "兆丰路",
+      "sequence": "137",
+      "stationLatitude": "31.288880 ",
+      "stationLongitude": "121.150081 ",
+      "linenumber": "11"
+    },
+    {
+      "stationId": "zhenru138",
+      "stationName": "真如",
+      "sequence": "138",
+      "stationLatitude": "31.250592 ",
+      "stationLongitude": "121.407298 ",
+      "linenumber": "11"
+    }
+  ],
+  "line12": [
+    {
+      "stationId": "aiguolu101",
+      "stationName": "爱国路",
+      "sequence": "101",
+      "stationLatitude": "31.280014 ",
+      "stationLongitude": "121.553038 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "caobaolu102",
+      "stationName": "漕宝路",
+      "sequence": "102",
+      "stationLatitude": "31.168308 ",
+      "stationLongitude": "121.435039 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "dalianlu103",
+      "stationName": "大连路",
+      "sequence": "103",
+      "stationLatitude": "31.258000 ",
+      "stationLongitude": "121.513012 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "damuqiaolu104",
+      "stationName": "大木桥路",
+      "sequence": "104",
+      "stationLatitude": "31.194274 ",
+      "stationLongitude": "121.463634 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "donglanlu105",
+      "stationName": "东兰路",
+      "sequence": "105",
+      "stationLatitude": "31.155168 ",
+      "stationLongitude": "121.392169 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "donglulu106",
+      "stationName": "东陆路",
+      "sequence": "106",
+      "stationLatitude": "31.282608 ",
+      "stationLongitude": "121.578789 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "fuxingdao107",
+      "stationName": "复兴岛",
+      "sequence": "107",
+      "stationLatitude": "31.280870 ",
+      "stationLongitude": "121.561440 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "gudailu108",
+      "stationName": "顾戴路",
+      "sequence": "108",
+      "stationLatitude": "31.140928 ",
+      "stationLongitude": "121.392378 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "guilingongyuan109",
+      "stationName": "桂林公园",
+      "sequence": "109",
+      "stationLatitude": "31.166792 ",
+      "stationLongitude": "121.418669 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "guojikeyunzhongxin110",
+      "stationName": "国际客运中心",
+      "sequence": "110",
+      "stationLatitude": "31.250195 ",
+      "stationLongitude": "121.498269 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "hanzhonglu111",
+      "stationName": "汉中路",
+      "sequence": "111",
+      "stationLatitude": "31.241062 ",
+      "stationLongitude": "121.458756 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "hongcaolu112",
+      "stationName": "虹漕路",
+      "sequence": "112",
+      "stationLatitude": "31.163979 ",
+      "stationLongitude": "121.410502 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "hongmeilu113",
+      "stationName": "虹梅路",
+      "sequence": "113",
+      "stationLatitude": "31.160221 ",
+      "stationLongitude": "121.397435 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "hongshenlu114",
+      "stationName": "虹莘路",
+      "sequence": "114",
+      "stationLatitude": "31.137289 ",
+      "stationLongitude": "121.379365 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "jiashanlu115",
+      "stationName": "嘉善路",
+      "sequence": "115",
+      "stationLatitude": "31.202906 ",
+      "stationLongitude": "121.460783 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "jiangpugongyuan116",
+      "stationName": "江浦公园",
+      "sequence": "116",
+      "stationLatitude": "31.264624 ",
+      "stationLongitude": "121.523770 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "jinhailu117",
+      "stationName": "金海路",
+      "sequence": "117",
+      "stationLatitude": "31.263052 ",
+      "stationLongitude": "121.638668 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "jinjinglu118",
+      "stationName": "金京路",
+      "sequence": "118",
+      "stationLatitude": "31.279760 ",
+      "stationLongitude": "121.615622 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "jufenglu119",
+      "stationName": "巨峰路",
+      "sequence": "119",
+      "stationLatitude": "31.280517 ",
+      "stationLongitude": "121.589019 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "longcaolu120",
+      "stationName": "龙漕路",
+      "sequence": "120",
+      "stationLatitude": "31.169935 ",
+      "stationLongitude": "121.444209 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "longhua121",
+      "stationName": "龙华",
+      "sequence": "121",
+      "stationLatitude": "31.173008 ",
+      "stationLongitude": "121.452814 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "longhuazhonglu122",
+      "stationName": "龙华中路",
+      "sequence": "122",
+      "stationLatitude": "31.185069 ",
+      "stationLongitude": "121.457183 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "longchanglu123",
+      "stationName": "隆昌路",
+      "sequence": "123",
+      "stationLatitude": "31.275110 ",
+      "stationLongitude": "121.544413 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "nanjingxilu124",
+      "stationName": "南京西路",
+      "sequence": "124",
+      "stationLatitude": "31.228870 ",
+      "stationLongitude": "121.460734 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "ningguolu125",
+      "stationName": "宁国路",
+      "sequence": "125",
+      "stationLatitude": "31.268698 ",
+      "stationLongitude": "121.532603 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "qishenlu126",
+      "stationName": "七莘路",
+      "sequence": "126",
+      "stationLatitude": "31.132038 ",
+      "stationLongitude": "121.363236 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "qufulu127",
+      "stationName": "曲阜路",
+      "sequence": "127",
+      "stationLatitude": "31.242395 ",
+      "stationLongitude": "121.471485 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "shanxinanlu128",
+      "stationName": "陕西南路",
+      "sequence": "128",
+      "stationLatitude": "31.215839 ",
+      "stationLongitude": "121.458835 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "shenjianglu129",
+      "stationName": "申江路",
+      "sequence": "129",
+      "stationLatitude": "31.280213 ",
+      "stationLongitude": "121.627208 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "tilanqiao130",
+      "stationName": "提篮桥",
+      "sequence": "130",
+      "stationLatitude": "31.253504 ",
+      "stationLongitude": "121.506695 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "tiantonglu131",
+      "stationName": "天潼路",
+      "sequence": "131",
+      "stationLatitude": "31.244345 ",
+      "stationLongitude": "121.482215 ",
+      "linenumber": "12"
+    },
+    {
+      "stationId": "yanggaobeilu132",
+      "stationName": "杨高北路",
+      "sequence": "132",
+      "stationLatitude": "31.280101 ",
+      "stationLongitude": "121.602868 ",
+      "linenumber": "12"
+    }
+  ],
+  "line13": [
+    {
+      "stationId": "daduhelu101",
+      "stationName": "大渡河路",
+      "sequence": "101",
+      "stationLatitude": "31.231786 ",
+      "stationLongitude": "121.395108 ",
+      "linenumber": "13"
+    },
+    {
+      "stationId": "fengzhuang102",
+      "stationName": "丰庄",
+      "sequence": "102",
+      "stationLatitude": "31.242442 ",
+      "stationLongitude": "121.355633 ",
+      "linenumber": "13"
+    },
+    {
+      "stationId": "hanzhonglu103",
+      "stationName": "汉中路",
+      "sequence": "103",
+      "stationLatitude": "31.241062 ",
+      "stationLongitude": "121.458756 ",
+      "linenumber": "13"
+    },
+    {
+      "stationId": "huaihaizhonglu104",
+      "stationName": "淮海中路",
+      "sequence": "104",
+      "stationLatitude": "31.220097 ",
+      "stationLongitude": "121.464190 ",
+      "linenumber": "13"
+    },
+    {
+      "stationId": "jiangninglu105",
+      "stationName": "江宁路",
+      "sequence": "105",
+      "stationLatitude": "31.244199 ",
+      "stationLongitude": "121.444146 ",
+      "linenumber": "13"
+    },
+    {
+      "stationId": "jinshajianglu106",
+      "stationName": "金沙江路",
+      "sequence": "106",
+      "stationLatitude": "31.231898 ",
+      "stationLongitude": "121.413002 ",
+      "linenumber": "13"
+    },
+    {
+      "stationId": "jinshajiangxilu107",
+      "stationName": "金沙江西路",
+      "sequence": "107",
+      "stationLatitude": "31.241120 ",
+      "stationLongitude": "121.335225 ",
+      "linenumber": "13"
+    },
+    {
+      "stationId": "jinyunlu108",
+      "stationName": "金运路",
+      "sequence": "108",
+      "stationLatitude": "31.240998 ",
+      "stationLongitude": "121.319595 ",
+      "linenumber": "13"
+    },
+    {
+      "stationId": "longdelu109",
+      "stationName": "隆德路",
+      "sequence": "109",
+      "stationLatitude": "31.230462 ",
+      "stationLongitude": "121.423519 ",
+      "linenumber": "13"
+    },
+    {
+      "stationId": "madanglu110",
+      "stationName": "马当路",
+      "sequence": "110",
+      "stationLatitude": "31.209447 ",
+      "stationLongitude": "121.476777 ",
+      "linenumber": "13"
+    },
+    {
+      "stationId": "nanjingxilu111",
+      "stationName": "南京西路",
+      "sequence": "111",
+      "stationLatitude": "31.228870 ",
+      "stationLongitude": "121.460734 ",
+      "linenumber": "13"
+    },
+    {
+      "stationId": "qilianshannanlu112",
+      "stationName": "祁连山南路",
+      "sequence": "112",
+      "stationLatitude": "31.237405 ",
+      "stationLongitude": "121.367541 ",
+      "linenumber": "13"
+    },
+    {
+      "stationId": "shibodadao113",
+      "stationName": "世博大道",
+      "sequence": "113",
+      "stationLatitude": "31.182492 ",
+      "stationLongitude": "121.484392 ",
+      "linenumber": "13"
+    },
+    {
+      "stationId": "shibohuibowuguan114",
+      "stationName": "世博会博物馆",
+      "sequence": "114",
+      "stationLatitude": "31.196866 ",
+      "stationLongitude": "121.481959 ",
+      "linenumber": "13"
+    },
+    {
+      "stationId": "wuninglu115",
+      "stationName": "武宁路",
+      "sequence": "115",
+      "stationLatitude": "31.233939 ",
+      "stationLongitude": "121.430245 ",
+      "linenumber": "13"
+    },
+    {
+      "stationId": "xintiandi116",
+      "stationName": "新天地",
+      "sequence": "116",
+      "stationLatitude": "31.216088 ",
+      "stationLongitude": "121.475153 ",
+      "linenumber": "13"
+    },
+    {
+      "stationId": "changshoulu117",
+      "stationName": "长寿路",
+      "sequence": "117",
+      "stationLatitude": "31.240367 ",
+      "stationLongitude": "121.438338 ",
+      "linenumber": "13"
+    },
+    {
+      "stationId": "zhenbeilu118",
+      "stationName": "真北路",
+      "sequence": "118",
+      "stationLatitude": "31.232202 ",
+      "stationLongitude": "121.382262 ",
+      "linenumber": "13"
+    },
+    {
+      "stationId": "ziranbowuguan119",
+      "stationName": "自然博物馆",
+      "sequence": "119",
+      "stationLatitude": "31.235817 ",
+      "stationLongitude": "121.462793 ",
+      "linenumber": "13"
+    }
+  ],
+  "line16": [
+    {
+      "stationId": "dishuihu101",
+      "stationName": "滴水湖",
+      "sequence": "101",
+      "stationLatitude": "30.907127 ",
+      "stationLongitude": "121.929550 ",
+      "linenumber": "16"
+    },
+    {
+      "stationId": "hangtoudong102",
+      "stationName": "航头东",
+      "sequence": "102",
+      "stationLatitude": "31.055038 ",
+      "stationLongitude": "121.617469 ",
+      "linenumber": "16"
+    },
+    {
+      "stationId": "heshahangcheng103",
+      "stationName": "鹤沙航城",
+      "sequence": "103",
+      "stationLatitude": "31.077747 ",
+      "stationLongitude": "121.611194 ",
+      "linenumber": "16"
+    },
+    {
+      "stationId": "huaxiazhonglu104",
+      "stationName": "华夏中路",
+      "sequence": "104",
+      "stationLatitude": "31.175047 ",
+      "stationLongitude": "121.583416 ",
+      "linenumber": "16"
+    },
+    {
+      "stationId": "huinan105",
+      "stationName": "惠南",
+      "sequence": "105",
+      "stationLatitude": "31.053770 ",
+      "stationLongitude": "121.761937 ",
+      "linenumber": "16"
+    },
+    {
+      "stationId": "huinandong106",
+      "stationName": "惠南东",
+      "sequence": "106",
+      "stationLatitude": "31.026418 ",
+      "stationLongitude": "121.793308 ",
+      "linenumber": "16"
+    },
+    {
+      "stationId": "lingangdadao107",
+      "stationName": "临港大道",
+      "sequence": "107",
+      "stationLatitude": "30.924006 ",
+      "stationLongitude": "121.910344 ",
+      "linenumber": "16"
+    },
+    {
+      "stationId": "longyanglu108",
+      "stationName": "龙阳路",
+      "sequence": "108",
+      "stationLatitude": "31.202813 ",
+      "stationLongitude": "121.557498 ",
+      "linenumber": "16"
+    },
+    {
+      "stationId": "luoshanlu109",
+      "stationName": "罗山路",
+      "sequence": "109",
+      "stationLatitude": "31.153303 ",
+      "stationLongitude": "121.593209 ",
+      "linenumber": "16"
+    },
+    {
+      "stationId": "shuyuan110",
+      "stationName": "书院",
+      "sequence": "110",
+      "stationLatitude": "30.959356 ",
+      "stationLongitude": "121.850623 ",
+      "linenumber": "16"
+    },
+    {
+      "stationId": "xinchang111",
+      "stationName": "新场",
+      "sequence": "111",
+      "stationLatitude": "31.045406 ",
+      "stationLongitude": "121.648782 ",
+      "linenumber": "16"
+    },
+    {
+      "stationId": "shanghaiyeshengdongwuyuan112",
+      "stationName": "上海野生动物园",
+      "sequence": "112",
+      "stationLatitude": "31.050298 ",
+      "stationLongitude": "121.699712 ",
+      "linenumber": "16"
+    },
+    {
+      "stationId": "zhoupudong113",
+      "stationName": "周浦东",
+      "sequence": "113",
+      "stationLatitude": "31.110039 ",
+      "stationLongitude": "121.606945 ",
+      "linenumber": "16"
     }
   ]
 }

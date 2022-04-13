@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/homeconstraintlayout"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeconstraintlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
@@ -16,7 +16,7 @@
         android:background="@color/white"
         android:gravity="center"
         android:text=""
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/verticalguideline1"
         app:layout_constraintTop_toBottomOf="@+id/StationNum1" />
 
     <TextView
@@ -27,7 +27,7 @@
         android:background="@color/white"
         android:gravity="center"
         android:text=""
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/verticalguideline1"
         app:layout_constraintTop_toBottomOf="@+id/StationNum3" />
 
     <TextView
@@ -38,7 +38,7 @@
         android:background="@color/white"
         android:gravity="center"
         android:text=""
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/verticalguideline1"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -49,7 +49,7 @@
         android:background="@color/white"
         android:gravity="center"
         android:text=""
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/verticalguideline1"
         app:layout_constraintTop_toBottomOf="@+id/StationNum4" />
 
     <TextView
@@ -60,11 +60,11 @@
         android:background="@color/white"
         android:gravity="center"
         android:text=""
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/verticalguideline1"
         app:layout_constraintTop_toBottomOf="@+id/StationNum2" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
+        android:id="@+id/verticalguideline1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -77,11 +77,10 @@
         android:layout_width="wrap_content"
         android:layout_height="20dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="40dp"
         android:background="@color/purple_200"
         android:text="You_are_here"
         app:layout_constraintStart_toEndOf="@+id/StationNum1"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/horizontalguideline1" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingCreateStationButton"
@@ -126,8 +125,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Start"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/verticalguideline1"
         app:layout_constraintTop_toBottomOf="@+id/StationNum5"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalguideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="40dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
