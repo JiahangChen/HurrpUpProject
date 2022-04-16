@@ -13,6 +13,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.CompoundButton
+import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.Dimension.DP
@@ -67,9 +68,11 @@ class HomeFragment : Fragment() {
         moveStatePosition(0)
 
         homeViewBinding.floatingCreateStationButton.setOnClickListener {
-
-            register.launch(Intent(requireContext(), AddStationActivity::class.java))
-
+            if (homeViewModel.getAvailableStationNumber() < 5) {
+                register.launch(Intent(requireContext(), AddStationActivity::class.java))
+            } else {
+                Toast.makeText(requireContext(), "Too Much Station", Toast.LENGTH_SHORT).show()
+            }
         }
 
         homeViewBinding.stationup.setOnClickListener {

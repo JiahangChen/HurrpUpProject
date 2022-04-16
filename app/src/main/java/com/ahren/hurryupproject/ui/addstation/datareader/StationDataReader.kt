@@ -11,6 +11,7 @@ import java.io.*
 
 class StationDataReader(context: Context) {
     private val allStationListData = mutableMapOf<String, ArrayList<StationListBindingData>>()
+    private val allStationMapData = mutableMapOf<String, MutableMap<String, StationListBindingData>>()
 //    private val _oneStationListData = ArrayList<StationListBindingData>()
 
     init {
@@ -46,6 +47,8 @@ class StationDataReader(context: Context) {
             }
             allStationListData[key] = _oneStationListData
         }
+
+
     }
 
     fun getStationList(lineid: String): ArrayList<StationListBindingData> {
@@ -54,9 +57,15 @@ class StationDataReader(context: Context) {
     }
 
     fun getStation(lineid: String, stationid: String): StationListBindingData {
-        val map1 = allStationListData.get(lineid)?.map { it._stationId to it }?.toMap()
-
-        return allStationListData.get(lineid)!![0]
+//        val map1 = allStationListData.get(lineid)?.map { it._stationId to it }?.toMap()
+        val stationList = allStationListData.get(lineid)!!
+        for (station in stationList) {
+            if (station._stationId.get() == stationid) {
+                return station
+            }
+        }
+        return stationList[0]
+//        return allStationListData.get(lineid)!![0]
 
 
     }

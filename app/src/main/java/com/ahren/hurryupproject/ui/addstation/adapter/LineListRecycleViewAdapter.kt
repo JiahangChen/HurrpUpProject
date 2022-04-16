@@ -8,12 +8,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ahren.hurryupproject.R
 import com.ahren.hurryupproject.databinding.LineListDatabindingBinding
 import com.ahren.hurryupproject.ui.addstation.bean.LineListBindingData
-import com.ahren.hurryupproject.ui.addstation.datareader.LineDataReader
+import com.ahren.hurryupproject.ui.addstation.datareader.DataReader.getAllLineMapData
 
 class LineListRecycleViewAdapter(context: Context) : RecyclerView.Adapter<LineListRecycleViewAdapter.ViewHolder>() {
 
     private lateinit var lineItemClickListener: IlineItemClickListener
-    private val lineListData by lazy { LineDataReader(context).getLineList() }
+    private val lineListData by lazy { ArrayList(getAllLineMapData().values) }
 
     inner class ViewHolder(var dataBinding: LineListDatabindingBinding) : RecyclerView.ViewHolder(dataBinding.root)
 
