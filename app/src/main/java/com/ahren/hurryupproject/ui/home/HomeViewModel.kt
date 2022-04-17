@@ -72,6 +72,30 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
 
     fun getAvailableStationNumber(): Int = availableStationNumber
 
+    fun deleteStation(deleteStationNumber: Int): StationListBindingData {
+        if (deleteStationNumber <= availableStationNumber) {
+            if (deleteStationNumber <= stateButtonPosition) {
+                stateButtonPosition--
+            }
+            availableStationNumber--
+            _stationlist.value!!.add(emptyStationData)
+            return _stationlist.value!!.removeAt(deleteStationNumber-1)
+        } else {
+            return emptyStationData
+        }
+    }
+
+    fun deleteAllStation() {
+        _stationlist.value!!.clear()
+        _stationlist.value!!.add(emptyStationData)
+        _stationlist.value!!.add(emptyStationData)
+        _stationlist.value!!.add(emptyStationData)
+        _stationlist.value!!.add(emptyStationData)
+        _stationlist.value!!.add(emptyStationData)
+        stateButtonPosition = 0
+        availableStationNumber = 0
+    }
+
     fun switchAppStart() {
         startAppSwitched = !startAppSwitched
     }
