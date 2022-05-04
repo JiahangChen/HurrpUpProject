@@ -146,4 +146,21 @@
         app:layout_constraintStart_toStartOf="@+id/verticalguideline1"
         app:layout_constraintTop_toBottomOf="@+id/startapp" />
 
+    <ImageButton
+        android:id="@+id/collectionButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_like_yellow_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/horizontalguideline1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test query"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/collectionButton" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,8 +1,10 @@
 package com.ahren.hurryupproject.ui.home
 
 import android.app.Activity.RESULT_OK
+import android.content.ContentValues.TAG
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,6 +20,8 @@ import androidx.fragment.app.activityViewModels
 import com.ahren.hurryupproject.R
 import com.ahren.hurryupproject.databinding.FragmentHomeBinding
 import com.ahren.hurryupproject.ui.addstation.AddStationActivity
+import com.ahren.hurryupproject.ui.collection.room.database.CollectionDatabase
+import com.ahren.hurryupproject.ui.collection.room.entity.CollectionEntity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
@@ -31,6 +35,10 @@ class HomeFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val homeViewBinding get() = _homeViewBinding!!
+
+    private val collectionDao by lazy {
+        CollectionDatabase.getInstance(requireContext()).getCollectionDao()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -92,6 +100,27 @@ class HomeFragment : Fragment() {
             moveStatePosition(0)
         }
 
+        homeViewBinding.collectionButton.setOnClickListener {
+            Thread {
+                collectionDao.addCollection(
+                    CollectionEntity(
+                        statusPosition = 3,
+                        station1LineNumber = "1",
+                        station1Id = "jiangwan"
+                    )
+                )
+            }.start()
+        }
+
+        homeViewBinding.button2.setOnClickListener {
+            Thread {
+                val collectionList = collectionDao.queryCollection()
+                collectionList.forEach {
+                    Log.d(TAG, "result is: $it")
+                }
+            }.start()
+        }
+
 
 
 
@@ -146,37 +175,57 @@ class HomeFragment : Fragment() {
     }
 
     fun makeButtonDeletable() {
-        homeViewBinding.StationNum1.setOnLongClickListener{
+        homeViewBinding.StationNum1.setOnLongClickListener {
             val removedStation = homeViewModel.deleteStation(1)
-            Toast.makeText(requireContext(), "Successfully removed" + removedStation._stationName.get(), Toast.LENGTH_SHORT).show()
+            Toast.makeText(
+                requireContext(),
+                "Successfully removed" + removedStation._stationName.get(),
+                Toast.LENGTH_SHORT
+            ).show()
             refreshStationList()
             moveStatePosition(0)
             true
         }
-        homeViewBinding.StationNum2.setOnLongClickListener{
+        homeViewBinding.StationNum2.setOnLongClickListener {
             val removedStation = homeViewModel.deleteStation(2)
-            Toast.makeText(requireContext(), "Successfully removed" + removedStation._stationName.get(), Toast.LENGTH_SHORT).show()
+            Toast.makeText(
+                requireContext(),
+                "Successfully removed" + removedStation._stationName.get(),
+                Toast.LENGTH_SHORT
+            ).show()
             refreshStationList()
             moveStatePosition(0)
             true
         }
-        homeViewBinding.StationNum3.setOnLongClickListener{
+        homeViewBinding.StationNum3.setOnLongClickListener {
             val removedStation = homeViewModel.deleteStation(3)
-            Toast.makeText(requireContext(), "Successfully removed" + removedStation._stationName.get(), Toast.LENGTH_SHORT).show()
+            Toast.makeText(
+                requireContext(),
+                "Successfully removed" + removedStation._stationName.get(),
+                Toast.LENGTH_SHORT
+            ).show()
             refreshStationList()
             moveStatePosition(0)
             true
         }
-        homeViewBinding.StationNum4.setOnLongClickListener{
+        homeViewBinding.StationNum4.setOnLongClickListener {
             val removedStation = homeViewModel.deleteStation(4)
-            Toast.makeText(requireContext(), "Successfully removed" + removedStation._stationName.get(), Toast.LENGTH_SHORT).show()
+            Toast.makeText(
+                requireContext(),
+                "Successfully removed" + removedStation._stationName.get(),
+                Toast.LENGTH_SHORT
+            ).show()
             refreshStationList()
             moveStatePosition(0)
             true
         }
-        homeViewBinding.StationNum5.setOnLongClickListener{
+        homeViewBinding.StationNum5.setOnLongClickListener {
             val removedStation = homeViewModel.deleteStation(5)
-            Toast.makeText(requireContext(), "Successfully removed" + removedStation._stationName.get(), Toast.LENGTH_SHORT).show()
+            Toast.makeText(
+                requireContext(),
+                "Successfully removed" + removedStation._stationName.get(),
+                Toast.LENGTH_SHORT
+            ).show()
             refreshStationList()
             moveStatePosition(0)
             true

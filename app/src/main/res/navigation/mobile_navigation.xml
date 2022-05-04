@@ -13,13 +13,17 @@
 
     <fragment
         android:id="@+id/navigation_collection"
-        android:name="com.ahren.hurryupproject.ui.dashboard.DashboardFragment"
+        android:name="com.ahren.hurryupproject.ui.collection.CollectionFragment"
         android:label="@string/title_collection"
-        tools:layout="@layout/fragment_collection" />
+        tools:layout="@layout/fragment_collection" >
+        <action
+            android:id="@+id/action_navigation_collection_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_setting"
-        android:name="com.ahren.hurryupproject.ui.notifications.NotificationsFragment"
+        android:name="com.ahren.hurryupproject.ui.setting.SettingFragment"
         android:label="@string/title_setting"
         tools:layout="@layout/fragment_setting" />
 </navigation>

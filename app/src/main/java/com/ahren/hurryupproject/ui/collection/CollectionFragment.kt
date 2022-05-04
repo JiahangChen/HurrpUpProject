@@ -1,4 +1,4 @@
-package com.ahren.hurryupproject.ui.dashboard
+package com.ahren.hurryupproject.ui.collection
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.ahren.hurryupproject.databinding.FragmentCollectionBinding
 
-class DashboardFragment : Fragment() {
+class CollectionFragment : Fragment() {
 
     private var _binding: FragmentCollectionBinding? = null
 
@@ -23,7 +23,7 @@ class DashboardFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val dashboardViewModel =
-            ViewModelProvider(this).get(DashboardViewModel::class.java)
+            ViewModelProvider(this).get(CollectionViewModel::class.java)
 
         _binding = FragmentCollectionBinding.inflate(inflater, container, false)
         val root: View = binding.root
