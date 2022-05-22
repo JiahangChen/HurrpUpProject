@@ -121,6 +121,16 @@ class HomeFragment : Fragment() {
             }.start()
         }
 
+        homeViewBinding.button3.setOnClickListener {
+            Thread {
+                val collectionList = collectionDao.queryCollection()
+                for ( collectionEntity in collectionList ) {
+                    collectionDao.deleteCollection(
+                        collectionEntity
+                    )
+                }
+            }.start()
+        }
 
 
 

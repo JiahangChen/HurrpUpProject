@@ -14,4 +14,5 @@ interface CollectionDao {
 
     @Query("select * from userCollection")
     fun queryCollection(): List<CollectionEntity>
+
 }
