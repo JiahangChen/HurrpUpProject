@@ -13,9 +13,9 @@
 
     <fragment
         android:id="@+id/navigation_collection"
-        android:name="com.ahren.hurryupproject.ui.collection.CollectionFragment"
+        android:name="com.ahren.hurryupproject.ui.collection.fragment.CollectionRecycleViewFragment"
         android:label="@string/title_collection"
-        tools:layout="@layout/fragment_collection" >
+        tools:layout="@layout/fragment_collection_recycle_view" >
         <action
             android:id="@+id/action_navigation_collection_to_navigation_home"
             app:destination="@id/navigation_home" />
