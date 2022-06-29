@@ -16,6 +16,7 @@ import com.ahren.hurryupproject.ui.collection.room.database.CollectionDatabase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class CollectionRecycleViewFragment : Fragment() {
 
@@ -49,13 +50,11 @@ class CollectionRecycleViewFragment : Fragment() {
         mBinding.rvCollectionList.adapter = adapter
 
 
-        GlobalScope.launch (Dispatchers.IO) {
-            val collectionList = collectionDao.queryCollection()
-            activity?.runOnUiThread(object: Runnable {
-                override fun run() {
-                    adapter.setCollection(collectionList)
-                }
-            })
+        GlobalScope.launch (Dispatchers.Main) {
+            val collectionList = withContext(Dispatchers.IO) {
+                collectionDao.queryCollection()
+            }
+            adapter.setCollection(collectionList)
         }
 
         return mBinding.root
