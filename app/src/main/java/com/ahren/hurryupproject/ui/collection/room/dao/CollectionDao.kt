@@ -15,4 +15,7 @@ interface CollectionDao {
     @Query("select * from userCollection")
     fun queryCollection(): List<CollectionEntity>
 
+    @Query("select * from userCollection where id = :collectionId")
+    fun searchCollectionById(vararg collectionId: Int): List<CollectionEntity>
+
 }

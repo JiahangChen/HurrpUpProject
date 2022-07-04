@@ -6,7 +6,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.Navigation
+import androidx.navigation.Navigation.findNavController
+import androidx.navigation.findNavController
 import com.ahren.hurryupproject.R
 import com.ahren.hurryupproject.databinding.FragmentCollectionRecycleViewBinding
 import com.ahren.hurryupproject.ui.addstation.AddStationActivity
@@ -56,6 +60,22 @@ class CollectionRecycleViewFragment : Fragment() {
             }
             adapter.setCollection(collectionList)
         }
+
+        val view = inflater.inflate(R.layout.fragment_collection_recycle_view, container, false)
+        adapter.setCollectionItemClickListener(object: CollectionListRecycleViewAdapter.IcollectionItemClickListener {
+            override fun onCollectionItemClickListener(collectionId: Int) {
+                GlobalScope.launch (Dispatchers.Main) {
+                    // to call collectionStationFromDatabase in homeViewModel and naviagate home
+                    Toast.makeText(
+                        requireContext(),
+                        "Load collection ID" + collectionId,
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+                findNavController(activity!!.parent, R.id.nav_host_fragment_activity_main).navigate(R.id.action_navigation_collection_to_navigation_home)
+            }
+//            Navigation.findNavController(view).navigate(R.id.action_navigation_collection_to_navigation_home)
+        })
 
         return mBinding.root
     }

@@ -2,9 +2,9 @@ package com.ahren.hurryupproject.ui.collection.bean
 
 import androidx.databinding.ObservableField
 
-class CollectionListBindingData (val collectionId: String?, val collectionName: String?, val collectionText: String?) {
+class CollectionListBindingData (val collectionId: Int?, val collectionName: String?, val collectionText: String?) {
 
-    val _collectionId = ObservableField<String>()
+    val _collectionId = ObservableField<Int>()
     val _collectionName = ObservableField<String>()
     val _collectionText = ObservableField<String>()
 

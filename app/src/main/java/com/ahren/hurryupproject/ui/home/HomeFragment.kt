@@ -101,15 +101,7 @@ class HomeFragment : Fragment() {
         }
 
         homeViewBinding.collectionButton.setOnClickListener {
-            Thread {
-                collectionDao.addCollection(
-                    CollectionEntity(
-                        statusPosition = 3,
-                        station1LineNumber = "1",
-                        station1Id = "jiangwan"
-                    )
-                )
-            }.start()
+            homeViewModel.collectStationToDatabase()
         }
 
         homeViewBinding.button2.setOnClickListener {
