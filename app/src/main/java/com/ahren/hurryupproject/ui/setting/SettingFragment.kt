@@ -30,6 +30,9 @@ class SettingFragment : Fragment() {
     private val settingDao by lazy {
         CollectionDatabase.getInstance(requireContext()).getSettingDao()
     }
+    private val collectionDao by lazy {
+        CollectionDatabase.getInstance(requireContext()).getCollectionDao()
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -151,6 +154,18 @@ class SettingFragment : Fragment() {
         notificationsViewModel.text.observe(viewLifecycleOwner) {
 
         }
+
+        binding.button.setOnClickListener {
+            Thread {
+                val collectionList = collectionDao.queryCollection()
+                for ( collectionEntity in collectionList ) {
+                    collectionDao.deleteCollection(
+                        collectionEntity
+                    )
+                }
+            }.start()
+        }
+
         return root
     }
 

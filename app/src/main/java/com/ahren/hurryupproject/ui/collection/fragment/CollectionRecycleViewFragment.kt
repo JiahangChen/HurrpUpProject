@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.Navigation
 import androidx.navigation.Navigation.findNavController
 import androidx.navigation.findNavController
@@ -17,6 +18,7 @@ import com.ahren.hurryupproject.ui.addstation.AddStationActivity
 import com.ahren.hurryupproject.ui.addstation.adapter.LineListRecycleViewAdapter
 import com.ahren.hurryupproject.ui.collection.adapter.CollectionListRecycleViewAdapter
 import com.ahren.hurryupproject.ui.collection.room.database.CollectionDatabase
+import com.ahren.hurryupproject.ui.home.HomeViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -29,6 +31,7 @@ class CollectionRecycleViewFragment : Fragment() {
         CollectionDatabase.getInstance(requireContext()).getCollectionDao()
     }
     private lateinit var adapter: CollectionListRecycleViewAdapter
+    private val homeViewModel: HomeViewModel by activityViewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -61,7 +64,6 @@ class CollectionRecycleViewFragment : Fragment() {
             adapter.setCollection(collectionList)
         }
 
-        val view = inflater.inflate(R.layout.fragment_collection_recycle_view, container, false)
         adapter.setCollectionItemClickListener(object: CollectionListRecycleViewAdapter.IcollectionItemClickListener {
             override fun onCollectionItemClickListener(collectionId: Int) {
                 GlobalScope.launch (Dispatchers.Main) {
@@ -71,10 +73,10 @@ class CollectionRecycleViewFragment : Fragment() {
                         "Load collection ID" + collectionId,
                         Toast.LENGTH_SHORT
                     ).show()
+                    homeViewModel.collectionStationFromDatabase(collectionId)
+                    findNavController(requireView()).navigate(R.id.action_navigation_collection_to_navigation_home)
                 }
-                findNavController(activity!!.parent, R.id.nav_host_fragment_activity_main).navigate(R.id.action_navigation_collection_to_navigation_home)
             }
-//            Navigation.findNavController(view).navigate(R.id.action_navigation_collection_to_navigation_home)
         })
 
         return mBinding.root

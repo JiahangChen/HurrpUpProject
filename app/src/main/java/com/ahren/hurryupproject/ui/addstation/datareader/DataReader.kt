@@ -20,7 +20,7 @@ object DataReader {
             "line10" to LineListBindingData("line10", "十号线", PatternHelper.getLineColor("line10")),
             "line11" to LineListBindingData("line11", "十一号线", PatternHelper.getLineColor("line11")),
             "line12" to LineListBindingData("line12", "十二号线", PatternHelper.getLineColor("line12")),
-            "line16" to LineListBindingData("line16", "十三号线", PatternHelper.getLineColor("line16")),
+            "line16" to LineListBindingData("line16", "十六号线", PatternHelper.getLineColor("line16")),
         )
 
     }

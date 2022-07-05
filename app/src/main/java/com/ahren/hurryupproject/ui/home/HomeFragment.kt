@@ -18,6 +18,7 @@ import androidx.core.view.marginTop
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import com.ahren.hurryupproject.R
+import com.ahren.hurryupproject.databinding.ActivityMainBinding
 import com.ahren.hurryupproject.databinding.FragmentHomeBinding
 import com.ahren.hurryupproject.ui.addstation.AddStationActivity
 import com.ahren.hurryupproject.ui.collection.room.database.CollectionDatabase
@@ -90,11 +91,16 @@ class HomeFragment : Fragment() {
             override fun onCheckedChanged(switchView: CompoundButton?, isChecked: Boolean) {
                 setButtonEnablementOnScreen(isChecked)
                 homeViewModel.switchAppStart()
+                if (isChecked) {
+                    //TODO(Create the Service)
+                } else {
+                    //TODO(Close the Service)
+                }
             }
         })
 
         makeButtonDeletable()
-        homeViewBinding.removeallstationbutton.setOnClickListener {
+        homeViewBinding.clearallstation.setOnClickListener {
             homeViewModel.deleteAllStation()
             refreshStationList()
             moveStatePosition(0)
@@ -104,28 +110,14 @@ class HomeFragment : Fragment() {
             homeViewModel.collectStationToDatabase()
         }
 
-        homeViewBinding.button2.setOnClickListener {
-            Thread {
-                val collectionList = collectionDao.queryCollection()
-                collectionList.forEach {
-                    Log.d(TAG, "result is: $it")
-                }
-            }.start()
-        }
-
-        homeViewBinding.button3.setOnClickListener {
-            Thread {
-                val collectionList = collectionDao.queryCollection()
-                for ( collectionEntity in collectionList ) {
-                    collectionDao.deleteCollection(
-                        collectionEntity
-                    )
-                }
-            }.start()
-        }
-
-
-
+//        homeViewBinding.button2.setOnClickListener {
+//            Thread {
+//                val collectionList = collectionDao.queryCollection()
+//                collectionList.forEach {
+//                    Log.d(TAG, "result is: $it")
+//                }
+//            }.start()
+//        }
 
         return homeViewBinding.root
     }
@@ -240,7 +232,7 @@ class HomeFragment : Fragment() {
             homeViewBinding.floatingCreateStationButton.isEnabled = false
             homeViewBinding.stationup.isEnabled = false
             homeViewBinding.stationdown.isEnabled = false
-            homeViewBinding.removeallstationbutton.isEnabled = false
+            homeViewBinding.clearallstation.isEnabled = false
             actionBarMenu?.findItem(R.id.navigation_collection)?.isEnabled = false
             actionBarMenu?.findItem(R.id.navigation_setting)?.isEnabled = false
             actionBarMenu?.findItem(R.id.navigation_home)?.isEnabled = false
@@ -266,7 +258,7 @@ class HomeFragment : Fragment() {
             homeViewBinding.floatingCreateStationButton.isEnabled = true
             homeViewBinding.stationup.isEnabled = true
             homeViewBinding.stationdown.isEnabled = true
-            homeViewBinding.removeallstationbutton.isEnabled = true
+            homeViewBinding.clearallstation.isEnabled = true
             actionBarMenu?.findItem(R.id.navigation_collection)?.isEnabled = true
             actionBarMenu?.findItem(R.id.navigation_setting)?.isEnabled = true
             actionBarMenu?.findItem(R.id.navigation_home)?.isEnabled = true

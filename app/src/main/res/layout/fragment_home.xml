@@ -8,16 +8,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="8dp"
-        android:text="del collections"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/collectionButton" />
-
     <TextView
         android:id="@+id/StationNum2"
         android:layout_width="115dp"
@@ -98,7 +88,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="10dp"
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -112,6 +102,7 @@
         android:insetTop="0dp"
         android:insetBottom="0dp"
         android:text="Up"
+        android:textAllCaps="false"
         android:textSize="11sp"
         app:layout_constraintBottom_toTopOf="@+id/youarehere"
         app:layout_constraintEnd_toEndOf="@+id/youarehere"
@@ -125,6 +116,7 @@
         android:insetTop="0dp"
         android:insetBottom="0dp"
         android:text="Down"
+        android:textAllCaps="false"
         android:textSize="11sp"
         app:layout_constraintEnd_toEndOf="@+id/youarehere"
         app:layout_constraintStart_toStartOf="@+id/youarehere"
@@ -148,11 +140,12 @@
         app:layout_constraintGuide_begin="40dp" />
 
     <Button
-        android:id="@+id/removeallstationbutton"
+        android:id="@+id/clearallstation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Remove All Station"
+        android:layout_marginTop="25dp"
+        android:text="Clear All"
+        android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="@+id/verticalguideline1"
         app:layout_constraintTop_toBottomOf="@+id/startapp" />
 
@@ -165,12 +158,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/horizontalguideline1" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="test query"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/collectionButton" />
+<!--    <Button-->
+<!--        android:id="@+id/button2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="test query"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/collectionButton" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
