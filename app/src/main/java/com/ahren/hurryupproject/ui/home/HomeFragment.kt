@@ -3,6 +3,7 @@ package com.ahren.hurryupproject.ui.home
 import android.app.Activity.RESULT_OK
 import android.content.ContentValues.TAG
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -20,6 +21,7 @@ import androidx.fragment.app.activityViewModels
 import com.ahren.hurryupproject.R
 import com.ahren.hurryupproject.databinding.ActivityMainBinding
 import com.ahren.hurryupproject.databinding.FragmentHomeBinding
+import com.ahren.hurryupproject.service.LocationReminderService
 import com.ahren.hurryupproject.ui.addstation.AddStationActivity
 import com.ahren.hurryupproject.ui.collection.room.database.CollectionDatabase
 import com.ahren.hurryupproject.ui.collection.room.entity.CollectionEntity
@@ -92,8 +94,16 @@ class HomeFragment : Fragment() {
                 setButtonEnablementOnScreen(isChecked)
                 homeViewModel.switchAppStart()
                 if (isChecked) {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                        requireActivity().applicationContext.startForegroundService(Intent(context, LocationReminderService::class.java))
+
+                    } else {
+                        requireActivity().applicationContext.startService(Intent(context, LocationReminderService::class.java))
+                    }
                     //TODO(Create the Service)
                 } else {
+                    requireActivity().applicationContext.stopService(Intent(context, LocationReminderService::class.java))
+
                     //TODO(Close the Service)
                 }
             }
@@ -124,6 +134,7 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
 
 
     }
