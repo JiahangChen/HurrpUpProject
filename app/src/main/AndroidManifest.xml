@@ -3,6 +3,12 @@
     package="com.ahren.hurryupproject">
 
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+
+
 
     <application
         android:name=".MyApplication"
@@ -26,8 +32,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".service.LocationReminderService">
-
+        <service android:name=".service.LocationReminderService"
+                 android:foregroundServiceType="location" >
         </service>
     </application>
 
