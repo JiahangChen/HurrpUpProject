@@ -2,11 +2,10 @@ package com.ahren.hurryupproject.ui.home
 
 import android.Manifest
 import android.app.Activity.RESULT_OK
-import android.content.ContentValues.TAG
 import android.content.Intent
+import android.content.IntentFilter
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,12 +20,10 @@ import androidx.core.view.marginTop
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import com.ahren.hurryupproject.R
-import com.ahren.hurryupproject.databinding.ActivityMainBinding
 import com.ahren.hurryupproject.databinding.FragmentHomeBinding
 import com.ahren.hurryupproject.service.LocationReminderService
 import com.ahren.hurryupproject.ui.addstation.AddStationActivity
 import com.ahren.hurryupproject.ui.collection.room.database.CollectionDatabase
-import com.ahren.hurryupproject.ui.collection.room.entity.CollectionEntity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
@@ -50,6 +47,10 @@ class HomeFragment : Fragment() {
 
     }
 
+    override fun onStart() {
+        super.onStart()
+    }
+
     @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -59,6 +60,11 @@ class HomeFragment : Fragment() {
         _homeViewBinding = FragmentHomeBinding.inflate(inflater, container, false)
 
         getLocationPermission()
+
+        val homeReceiver = HomeFragmentReceiver(homeViewBinding, homeViewModel, requireActivity(), resources)
+        var filter = IntentFilter()
+        filter.addAction("change_location")
+        activity?.registerReceiver(homeReceiver, filter)
 
         register =
             registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
@@ -74,6 +80,16 @@ class HomeFragment : Fragment() {
             }
         refreshStationList()
         moveStatePosition(0)
+
+
+
+//        val handler = @SuppressLint("HandlerLeak")
+//        object : Handler() {
+//            override fun handleMessage(msg: Message) {
+//                if (msg.what === ) {
+//                }
+//            }
+//        }
 
         homeViewBinding.floatingCreateStationButton.setOnClickListener {
             if (homeViewModel.getAvailableStationNumber() < 5) {
@@ -96,7 +112,7 @@ class HomeFragment : Fragment() {
         homeViewBinding.startapp.setOnCheckedChangeListener(object :
             CompoundButton.OnCheckedChangeListener {
             override fun onCheckedChanged(switchView: CompoundButton?, isChecked: Boolean) {
-                setButtonEnablementOnScreen(isChecked)
+                ButtonEnablement.setButtonEnablementOnScreen(isChecked, activity!!, homeViewBinding, resources)
                 homeViewModel.switchAppStart()
                 if (isChecked) {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -266,61 +282,6 @@ class HomeFragment : Fragment() {
         }
     }
 
-    fun setButtonEnablementOnScreen(isEnabled: Boolean) {
-        val actionBarMenu = activity?.findViewById<BottomNavigationView>(R.id.nav_view)?.menu
-        if (isEnabled) {
-            homeViewBinding.floatingCreateStationButton.isEnabled = false
-            homeViewBinding.stationup.isEnabled = false
-            homeViewBinding.stationdown.isEnabled = false
-            homeViewBinding.clearallstation.isEnabled = false
-            actionBarMenu?.findItem(R.id.navigation_collection)?.isEnabled = false
-            actionBarMenu?.findItem(R.id.navigation_setting)?.isEnabled = false
-            actionBarMenu?.findItem(R.id.navigation_home)?.isEnabled = false
-            actionBarMenu?.findItem(R.id.navigation_collection)?.icon =
-                ResourcesCompat.getDrawable(
-                    resources,
-                    R.drawable.ic_lock_black_24dp,
-                    null
-                )
-            actionBarMenu?.findItem(R.id.navigation_setting)?.icon =
-                ResourcesCompat.getDrawable(
-                    resources,
-                    R.drawable.ic_lock_black_24dp,
-                    null
-                )
-            actionBarMenu?.findItem(R.id.navigation_home)?.icon =
-                ResourcesCompat.getDrawable(
-                    resources,
-                    R.drawable.ic_lock_black_24dp,
-                    null
-                )
-        } else {
-            homeViewBinding.floatingCreateStationButton.isEnabled = true
-            homeViewBinding.stationup.isEnabled = true
-            homeViewBinding.stationdown.isEnabled = true
-            homeViewBinding.clearallstation.isEnabled = true
-            actionBarMenu?.findItem(R.id.navigation_collection)?.isEnabled = true
-            actionBarMenu?.findItem(R.id.navigation_setting)?.isEnabled = true
-            actionBarMenu?.findItem(R.id.navigation_home)?.isEnabled = true
-            actionBarMenu?.findItem(R.id.navigation_collection)?.icon =
-                ResourcesCompat.getDrawable(
-                    resources,
-                    R.drawable.ic_like_yellow_24dp,
-                    null
-                )
-            actionBarMenu?.findItem(R.id.navigation_setting)?.icon =
-                ResourcesCompat.getDrawable(
-                    resources,
-                    R.drawable.ic_setting_yellow_24dp,
-                    null
-                )
-            actionBarMenu?.findItem(R.id.navigation_home)?.icon =
-                ResourcesCompat.getDrawable(
-                    resources,
-                    R.drawable.ic_home_black_24dp,
-                    null
-                )
-        }
-    }
+
 
 }

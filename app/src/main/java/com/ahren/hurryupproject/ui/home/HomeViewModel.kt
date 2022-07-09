@@ -79,6 +79,8 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
 
     fun getAvailableStationNumber(): Int = availableStationNumber
 
+    fun getStateButtonPosition(): Int = stateButtonPosition
+
     fun deleteStation(deleteStationNumber: Int): StationListBindingData {
         if (deleteStationNumber <= availableStationNumber) {
             if (deleteStationNumber <= stateButtonPosition) {
