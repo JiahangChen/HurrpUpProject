@@ -10,4 +10,4 @@ Finish 0.1 version, Everyone can download app-release.apk to test it in Shanghai
 Easy to use, try yourself!
 
 
-Key words: Shanghai Underground, Notification, Android, Kotilin
+Key words: Shanghai Underground, Notification, Android, Kotlin
