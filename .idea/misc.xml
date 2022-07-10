@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.278" />
+        <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/drawable/ic_app_launcher.xml" value="0.347" />
         <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.316" />
         <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.316" />
         <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.316" />
@@ -11,7 +12,9 @@
         <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/drawable/ic_lock_black_24dp.xml" value="0.316" />
         <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.316" />
         <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/drawable/ic_setting_yellow_24dp.xml" value="0.316" />
+        <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/drawable/maomao.xml" value="0.392" />
         <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/drawable/家.xml" value="0.445" />
+        <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/drawable/猫猫(1).xml" value="0.392" />
         <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/layout/activity_add_station.xml" value="0.35885416666666664" />
         <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/layout/activity_main.xml" value="0.35885416666666664" />
         <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/layout/collection_list_databinding.xml" value="0.3953125" />
@@ -19,7 +22,7 @@
         <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/layout/fragment_collection.xml" value="0.31302083333333336" />
         <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/layout/fragment_collection_recycle_view.xml" value="0.3953125" />
         <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/layout/fragment_dashboard.xml" value="0.35885416666666664" />
-        <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/layout/fragment_home.xml" value="0.5" />
+        <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/layout/fragment_line_recycle_view.xml" value="0.5135869565217391" />
         <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/layout/fragment_notifications.xml" value="0.49320652173913043" />
         <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/layout/fragment_setting.xml" value="0.5" />
@@ -27,6 +30,8 @@
         <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/layout/line_list_databinding.xml" value="0.35885416666666664" />
         <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/layout/station_list_databinding.xml" value="0.35885416666666664" />
         <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/menu/bottom_nav_menu.xml" value="0.35885416666666664" />
+        <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.347" />
+        <entry key="..\:/GitHome/HurrpUpProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.347" />
         <entry key="..\:/HurryUpProject/app/src/main/res/layout/activity_add_station.xml" value="0.5135869565217391" />
         <entry key="..\:/HurryUpProject/app/src/main/res/layout/activity_line_list_recycle_view.xml" value="0.26197916666666665" />
         <entry key="..\:/HurryUpProject/app/src/main/res/layout/activity_main.xml" value="0.33" />

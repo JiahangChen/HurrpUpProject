@@ -92,7 +92,7 @@ class LocationReminderService: Service() {
 
             locationManager.requestLocationUpdates(
                 provider,
-                5000,
+                3000,
                 10F,
                 locationListener)
 
@@ -104,10 +104,6 @@ class LocationReminderService: Service() {
                 "Station Reached Channel" )
 
         }
-
-
-
-
     }
 
 

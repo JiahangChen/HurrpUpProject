@@ -22,10 +22,8 @@ import kotlinx.coroutines.withContext
 
 class HomeFragmentReceiver(private var homeViewBinding: FragmentHomeBinding, private var homeViewModel: HomeViewModel, private var activity: FragmentActivity, private val resources: Resources): BroadcastReceiver() {
     override fun onReceive(context: Context?, intent: Intent?) {
-        var Longitude: Double = intent?.getDoubleExtra("locationLongitude", 0.00)!!
-        var Latitude: Double = intent.getDoubleExtra("locationLatitude", 0.00)!!
-        homeViewBinding.latitudeId.setText(Longitude.toString())
-        homeViewBinding.longitudeId.setText(Latitude.toString())
+        val Longitude: Double = intent?.getDoubleExtra("locationLongitude", 0.00)!! + 0.0045285
+        val Latitude: Double = intent.getDoubleExtra("locationLatitude", 0.00)!! -0.00221764
 
         val pendingIntent: PendingIntent = Intent(context, MainActivity::class.java).let { notificationIntent ->
             PendingIntent.getActivity(context, 0, notificationIntent, PendingIntent.FLAG_IMMUTABLE)
@@ -33,7 +31,7 @@ class HomeFragmentReceiver(private var homeViewBinding: FragmentHomeBinding, pri
 
 
         val stationKeepAliveNotification: Notification = NotificationCompat.Builder(context!!, "station_keep_alive_notification")
-            .setContentTitle("Location")
+            .setContentTitle("App is Running in Location")
             .setContentText("Longitude: " + Longitude + "\n" + "Latitude:" + Latitude)
             .setSmallIcon(R.drawable.ic_lock_black_24dp)
             .setContentIntent(pendingIntent)
@@ -51,6 +49,9 @@ class HomeFragmentReceiver(private var homeViewBinding: FragmentHomeBinding, pri
         val stateButtonPosition = homeViewModel.getStateButtonPosition()
         if ( availableStationNumber <= stateButtonPosition ) {
             closeLocationService(context)
+            with(NotificationManagerCompat.from(context)) {
+                cancel(9)
+            }
             ButtonEnablement.setButtonEnablementOnScreen(false, activity!!, homeViewBinding, resources)
             homeViewBinding.startapp.isChecked = false
         } else {
@@ -59,7 +60,7 @@ class HomeFragmentReceiver(private var homeViewBinding: FragmentHomeBinding, pri
                     stationList!![stateButtonPosition]._stationLongitude.get()!!,
                     stationList[stateButtonPosition]._stationLatitude.get()!!,
                     Longitude,
-                    Latitude) < 1 ) {
+                    Latitude) < 0.008965625 * 0.008965625 * 2.25 ) {
 
                 // Reached Notification
                 val stationReachedNotification: Notification = NotificationCompat.Builder(context, "station_reached_notification")
@@ -75,6 +76,7 @@ class HomeFragmentReceiver(private var homeViewBinding: FragmentHomeBinding, pri
 
                 with(NotificationManagerCompat.from(context)) {
                     notify(10, stationReachedNotification)
+                }
 
                         // Move Position State Down
                 val StateMovingValue by lazy { homeViewBinding.StationNum2.height + homeViewBinding.StationNum2.marginTop }
@@ -95,18 +97,16 @@ class HomeFragmentReceiver(private var homeViewBinding: FragmentHomeBinding, pri
 
                 if ( availableStationNumber <= stateButtonPosition + 1 ) {
                     closeLocationService(context)
+                    with(NotificationManagerCompat.from(context)) {
+                        cancel(9)
+                    }
                     ButtonEnablement.setButtonEnablementOnScreen(false, activity!!, homeViewBinding, resources)
                     homeViewBinding.startapp.isChecked = false
-                }
                 }
 
 
             }
         }
-
-
-
-
     }
 
     fun closeLocationService(context: Context) {

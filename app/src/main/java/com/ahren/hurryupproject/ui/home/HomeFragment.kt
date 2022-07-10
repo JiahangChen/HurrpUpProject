@@ -82,15 +82,6 @@ class HomeFragment : Fragment() {
         moveStatePosition(0)
 
 
-
-//        val handler = @SuppressLint("HandlerLeak")
-//        object : Handler() {
-//            override fun handleMessage(msg: Message) {
-//                if (msg.what === ) {
-//                }
-//            }
-//        }
-
         homeViewBinding.floatingCreateStationButton.setOnClickListener {
             if (homeViewModel.getAvailableStationNumber() < 5) {
                 register.launch(Intent(requireContext(), AddStationActivity::class.java))
@@ -138,17 +129,8 @@ class HomeFragment : Fragment() {
         }
 
         homeViewBinding.collectionButton.setOnClickListener {
-            homeViewModel.collectStationToDatabase()
+            homeViewModel.collectStationToDatabase(requireContext())
         }
-
-//        homeViewBinding.button2.setOnClickListener {
-//            Thread {
-//                val collectionList = collectionDao.queryCollection()
-//                collectionList.forEach {
-//                    Log.d(TAG, "result is: $it")
-//                }
-//            }.start()
-//        }
 
         return homeViewBinding.root
     }
@@ -178,9 +160,6 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
-
     }
 
     override fun onDestroyView() {
@@ -191,9 +170,9 @@ class HomeFragment : Fragment() {
 
 
     fun moveStatePosition(direction: Int) {
-        val StateMovingValue by lazy { homeViewBinding.StationNum2.height + homeViewBinding.StationNum2.marginTop }
-
-        // direction 1 down, 2 up, 0 refresh button
+//        val StateMovingValue by lazy { homeViewBinding.StationNum2.height + homeViewBinding.StationNum2.marginTop }
+        val StateMovingValue: Int = 120 + 90
+        // direction 1 down, 2 up, 0 refresh button, 3 now button
         val marginTopChangedVale by lazy {
             homeViewModel.moveStatePosition(direction, StateMovingValue)
         }
@@ -226,58 +205,69 @@ class HomeFragment : Fragment() {
 
     fun makeButtonDeletable() {
         homeViewBinding.StationNum1.setOnLongClickListener {
-            val removedStation = homeViewModel.deleteStation(1)
-            Toast.makeText(
-                requireContext(),
-                "Successfully removed" + removedStation._stationName.get(),
-                Toast.LENGTH_SHORT
-            ).show()
-            refreshStationList()
-            moveStatePosition(0)
+            if (!homeViewBinding.startapp.isChecked) {
+                val removedStation = homeViewModel.deleteStation(1)
+                Toast.makeText(
+                    requireContext(),
+                    "Successfully removed" + removedStation._stationName.get(),
+                    Toast.LENGTH_SHORT
+                ).show()
+                refreshStationList()
+                moveStatePosition(0)
+            }
             true
+
         }
         homeViewBinding.StationNum2.setOnLongClickListener {
-            val removedStation = homeViewModel.deleteStation(2)
-            Toast.makeText(
-                requireContext(),
-                "Successfully removed" + removedStation._stationName.get(),
-                Toast.LENGTH_SHORT
-            ).show()
-            refreshStationList()
-            moveStatePosition(0)
+            if (!homeViewBinding.startapp.isChecked) {
+                val removedStation = homeViewModel.deleteStation(2)
+                Toast.makeText(
+                    requireContext(),
+                    "Successfully removed" + removedStation._stationName.get(),
+                    Toast.LENGTH_SHORT
+                ).show()
+                refreshStationList()
+                moveStatePosition(0)
+            }
             true
         }
         homeViewBinding.StationNum3.setOnLongClickListener {
-            val removedStation = homeViewModel.deleteStation(3)
-            Toast.makeText(
-                requireContext(),
-                "Successfully removed" + removedStation._stationName.get(),
-                Toast.LENGTH_SHORT
-            ).show()
-            refreshStationList()
-            moveStatePosition(0)
+            if (!homeViewBinding.startapp.isChecked) {
+                val removedStation = homeViewModel.deleteStation(3)
+                Toast.makeText(
+                    requireContext(),
+                    "Successfully removed" + removedStation._stationName.get(),
+                    Toast.LENGTH_SHORT
+                ).show()
+                refreshStationList()
+                moveStatePosition(0)
+            }
             true
         }
         homeViewBinding.StationNum4.setOnLongClickListener {
-            val removedStation = homeViewModel.deleteStation(4)
-            Toast.makeText(
-                requireContext(),
-                "Successfully removed" + removedStation._stationName.get(),
-                Toast.LENGTH_SHORT
-            ).show()
-            refreshStationList()
-            moveStatePosition(0)
+            if (!homeViewBinding.startapp.isChecked) {
+                val removedStation = homeViewModel.deleteStation(4)
+                Toast.makeText(
+                    requireContext(),
+                    "Successfully removed" + removedStation._stationName.get(),
+                    Toast.LENGTH_SHORT
+                ).show()
+                refreshStationList()
+                moveStatePosition(0)
+            }
             true
         }
         homeViewBinding.StationNum5.setOnLongClickListener {
-            val removedStation = homeViewModel.deleteStation(5)
-            Toast.makeText(
-                requireContext(),
-                "Successfully removed" + removedStation._stationName.get(),
-                Toast.LENGTH_SHORT
-            ).show()
-            refreshStationList()
-            moveStatePosition(0)
+            if (!homeViewBinding.startapp.isChecked) {
+                val removedStation = homeViewModel.deleteStation(5)
+                Toast.makeText(
+                    requireContext(),
+                    "Successfully removed" + removedStation._stationName.get(),
+                    Toast.LENGTH_SHORT
+                ).show()
+                refreshStationList()
+                moveStatePosition(0)
+            }
             true
         }
     }

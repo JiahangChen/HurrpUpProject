@@ -4,7 +4,9 @@ import android.annotation.SuppressLint
 import android.app.Application
 import android.content.Context
 import android.graphics.drawable.ColorDrawable
+import android.os.Looper
 import android.util.TypedValue
+import android.widget.Toast
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import com.ahren.hurryupproject.ui.addstation.bean.StationListBindingData
@@ -38,12 +40,6 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
     private var availableStationNumber: Int = 0
     private var startAppSwitched: Boolean = false
     fun addStation(context: Context, lineid: String, stationid: String) {
-//        for ( i in 0 until _stationlist.value!!.size) {
-//            if (_stationlist.value!![i].isEmpty){
-//                _stationlist.value!![i] = allStationMapData[lineid]!![stationid]!!
-//                break
-//            }
-//        }
         if (availableStationNumber < 5) {
             _stationlist.value!![availableStationNumber] = allStationMapData[lineid]!![stationid]!!
             availableStationNumber++
@@ -113,7 +109,7 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
         return startAppSwitched
     }
 
-    fun collectStationToDatabase() {
+    fun collectStationToDatabase(context: Context) {
         if (availableStationNumber != 0) {
             Thread {
                 var displayNameInCollection: String = _stationlist.value!![0]._stationName.get()!!
@@ -137,6 +133,13 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
                         customDescription = ""
                     )
                 )
+                Looper.prepare()
+                Toast.makeText(
+                    context,
+                    "Successful collect station list to database",
+                    Toast.LENGTH_SHORT
+                ).show()
+                Looper.loop()
             }.start()
         }
     }
