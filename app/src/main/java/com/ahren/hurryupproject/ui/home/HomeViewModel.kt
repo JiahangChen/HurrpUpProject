@@ -9,6 +9,7 @@ import android.util.TypedValue
 import android.widget.Toast
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.SavedStateHandle
 import com.ahren.hurryupproject.ui.addstation.bean.StationListBindingData
 import com.ahren.hurryupproject.ui.addstation.datareader.DataReader.getAllStationMapData
 import com.ahren.hurryupproject.ui.collection.room.database.CollectionDatabase
@@ -173,13 +174,5 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
                 availableStationNumber++
             }
         }
-    }
-
-    fun convDpToInt(dpValue: Int): Int {
-        return TypedValue.applyDimension(
-            TypedValue.COMPLEX_UNIT_DIP,
-            dpValue.toFloat(),
-            getApplication<Application>().resources.displayMetrics
-        ).toInt()
     }
 }

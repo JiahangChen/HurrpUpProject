@@ -3,4 +3,13 @@
     <string name="title_home">Home</string>
     <string name="title_collection">Collection</string>
     <string name="title_setting">Setting</string>
+    <string name="you_are_here">You Are Here</string>
+    <string name="up">Up</string>
+    <string name="down">Down</string>
+    <string name="start">Start</string>
+    <string name="clear_all">Clear All</string>
+    <string name="add_station">Add Station</string>
+    <string name="language">Language</string>
+    <string name="notification_range">Notification Range</string>
+    <string name="clear_collection">Clear Collection</string>
 </resources>

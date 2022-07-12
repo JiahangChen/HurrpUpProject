@@ -71,7 +71,6 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.15" />
 
-
     <TextView
         android:id="@+id/youarehere"
         android:layout_width="wrap_content"
@@ -79,7 +78,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="0dp"
         android:background="@color/purple_200"
-        android:text="You_are_here"
+        android:text="@string/you_are_here"
         app:layout_constraintStart_toEndOf="@+id/StationNum1"
         app:layout_constraintTop_toTopOf="@+id/horizontalguideline1" />
 
@@ -92,7 +91,9 @@
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:focusable="true"
+        android:contentDescription="@string/add_station" />
 
     <Button
         android:id="@+id/stationup"
@@ -101,7 +102,7 @@
         android:layout_marginBottom="5dp"
         android:insetTop="0dp"
         android:insetBottom="0dp"
-        android:text="Up"
+        android:text="@string/up"
         android:textAllCaps="false"
         android:textSize="11sp"
         app:layout_constraintBottom_toTopOf="@+id/youarehere"
@@ -115,7 +116,7 @@
         android:layout_marginTop="5dp"
         android:insetTop="0dp"
         android:insetBottom="0dp"
-        android:text="Down"
+        android:text="@string/down"
         android:textAllCaps="false"
         android:textSize="11sp"
         app:layout_constraintEnd_toEndOf="@+id/youarehere"
@@ -127,7 +128,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Start"
+        android:text="@string/start"
         app:layout_constraintStart_toStartOf="@+id/verticalguideline1"
         app:layout_constraintTop_toBottomOf="@+id/StationNum5"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
@@ -144,7 +145,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="Clear All"
+        android:text="@string/clear_all"
         android:textAllCaps="false"
         app:layout_constraintStart_toStartOf="@+id/verticalguideline1"
         app:layout_constraintTop_toBottomOf="@+id/startapp" />

@@ -8,6 +8,8 @@ import android.content.Context
 import android.content.Intent
 import android.content.res.Resources
 import android.location.Location
+import android.os.Build
+import androidx.annotation.RequiresApi
 import androidx.constraintlayout.widget.ConstraintSet
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
@@ -21,6 +23,7 @@ import com.ahren.hurryupproject.service.LocationReminderService
 import kotlinx.coroutines.withContext
 
 class HomeFragmentReceiver(private var homeViewBinding: FragmentHomeBinding, private var homeViewModel: HomeViewModel, private var activity: FragmentActivity, private val resources: Resources): BroadcastReceiver() {
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun onReceive(context: Context?, intent: Intent?) {
         val Longitude: Double = intent?.getDoubleExtra("locationLongitude", 0.00)!! + 0.0045285
         val Latitude: Double = intent.getDoubleExtra("locationLatitude", 0.00)!! -0.00221764
@@ -32,13 +35,11 @@ class HomeFragmentReceiver(private var homeViewBinding: FragmentHomeBinding, pri
 
         val stationKeepAliveNotification: Notification = NotificationCompat.Builder(context!!, "station_keep_alive_notification")
             .setContentTitle("App is Running in Location")
-            .setContentText("Longitude: " + Longitude + "\n" + "Latitude:" + Latitude)
+            .setContentText("Longitude: $Longitude\nLatitude:$Latitude")
             .setSmallIcon(R.drawable.ic_lock_black_24dp)
             .setContentIntent(pendingIntent)
             .setTicker("App was Running")
             .build()
-
-//        val notificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE)
 
         with(NotificationManagerCompat.from(context)) {
             notify(9, stationKeepAliveNotification)
@@ -52,7 +53,7 @@ class HomeFragmentReceiver(private var homeViewBinding: FragmentHomeBinding, pri
             with(NotificationManagerCompat.from(context)) {
                 cancel(9)
             }
-            ButtonEnablement.setButtonEnablementOnScreen(false, activity!!, homeViewBinding, resources)
+            HomeFragmentHelper.setButtonEnablementOnScreen(false, activity!!, homeViewBinding, resources)
             homeViewBinding.startapp.isChecked = false
         } else {
             val stationList = homeViewModel.getStationList().value
@@ -78,29 +79,14 @@ class HomeFragmentReceiver(private var homeViewBinding: FragmentHomeBinding, pri
                     notify(10, stationReachedNotification)
                 }
 
-                        // Move Position State Down
-                val StateMovingValue by lazy { homeViewBinding.StationNum2.height + homeViewBinding.StationNum2.marginTop }
-                // direction 1 down, 2 up, 0 refresh button
-                val marginTopChangedVale by lazy {
-                    homeViewModel.moveStatePosition(1, StateMovingValue)
-                }
-                val constraintSet = ConstraintSet()
-                constraintSet.clone(homeViewBinding.homeconstraintlayout)
-                constraintSet.connect(
-                    homeViewBinding.youarehere.id,
-                    ConstraintSet.TOP,
-                    homeViewBinding.horizontalguideline1.id,
-                    ConstraintSet.TOP,
-                    marginTopChangedVale
-                )
-                constraintSet.applyTo(homeViewBinding.homeconstraintlayout)
+                HomeFragmentHelper.moveStatePosition(homeViewBinding, homeViewModel, 1)
 
                 if ( availableStationNumber <= stateButtonPosition + 1 ) {
                     closeLocationService(context)
                     with(NotificationManagerCompat.from(context)) {
                         cancel(9)
                     }
-                    ButtonEnablement.setButtonEnablementOnScreen(false, activity!!, homeViewBinding, resources)
+                    HomeFragmentHelper.setButtonEnablementOnScreen(false, activity!!, homeViewBinding, resources)
                     homeViewBinding.startapp.isChecked = false
                 }
 

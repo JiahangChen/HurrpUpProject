@@ -19,6 +19,7 @@ import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.marginTop
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.ViewModelProvider
 import com.ahren.hurryupproject.R
 import com.ahren.hurryupproject.databinding.FragmentHomeBinding
 import com.ahren.hurryupproject.service.LocationReminderService
@@ -32,6 +33,7 @@ class HomeFragment : Fragment() {
     private lateinit var register: ActivityResultLauncher<Intent>
 
     private val homeViewModel: HomeViewModel by activityViewModels()
+ //   private lateinit var homeViewModel: HomeViewModel
     private var _homeViewBinding: FragmentHomeBinding? = null
 
     // This property is only valid between onCreateView and
@@ -45,6 +47,7 @@ class HomeFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+    //    homeViewModel = ViewModelProvider(requireActivity()).get(HomeViewModel::class.java)
     }
 
     override fun onStart() {
@@ -74,12 +77,12 @@ class HomeFragment : Fragment() {
                         result.data?.getStringExtra("lineid")!!,
                         result.data?.getStringExtra("stationid")!!
                     )
-                    refreshStationList()
+                    HomeFragmentHelper.refreshStationList(homeViewBinding, homeViewModel, viewLifecycleOwner)
 
                 }
             }
-        refreshStationList()
-        moveStatePosition(0)
+        HomeFragmentHelper.refreshStationList(homeViewBinding, homeViewModel, viewLifecycleOwner)
+        HomeFragmentHelper.moveStatePosition(homeViewBinding, homeViewModel, 0)
 
 
         homeViewBinding.floatingCreateStationButton.setOnClickListener {
@@ -91,11 +94,11 @@ class HomeFragment : Fragment() {
         }
 
         homeViewBinding.stationup.setOnClickListener {
-            moveStatePosition(2)
+            HomeFragmentHelper.moveStatePosition(homeViewBinding, homeViewModel, 2)
         }
 
         homeViewBinding.stationdown.setOnClickListener {
-            moveStatePosition(1)
+            HomeFragmentHelper.moveStatePosition(homeViewBinding, homeViewModel, 1)
         }
 
         homeViewBinding.startapp.isChecked = homeViewModel.getAppStartSwitch()
@@ -103,7 +106,7 @@ class HomeFragment : Fragment() {
         homeViewBinding.startapp.setOnCheckedChangeListener(object :
             CompoundButton.OnCheckedChangeListener {
             override fun onCheckedChanged(switchView: CompoundButton?, isChecked: Boolean) {
-                ButtonEnablement.setButtonEnablementOnScreen(isChecked, activity!!, homeViewBinding, resources)
+                HomeFragmentHelper.setButtonEnablementOnScreen(isChecked, activity!!, homeViewBinding, resources)
                 homeViewModel.switchAppStart()
                 if (isChecked) {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -121,11 +124,11 @@ class HomeFragment : Fragment() {
             }
         })
 
-        makeButtonDeletable()
+        HomeFragmentHelper.makeButtonDeletable(homeViewBinding, homeViewModel, viewLifecycleOwner, requireContext())
         homeViewBinding.clearallstation.setOnClickListener {
             homeViewModel.deleteAllStation()
-            refreshStationList()
-            moveStatePosition(0)
+            HomeFragmentHelper.refreshStationList(homeViewBinding, homeViewModel, viewLifecycleOwner)
+            HomeFragmentHelper.moveStatePosition(homeViewBinding, homeViewModel, 0)
         }
 
         homeViewBinding.collectionButton.setOnClickListener {
@@ -167,111 +170,4 @@ class HomeFragment : Fragment() {
         _homeViewBinding = null
         requireActivity().applicationContext.stopService(Intent(context, LocationReminderService::class.java))
     }
-
-
-    fun moveStatePosition(direction: Int) {
-//        val StateMovingValue by lazy { homeViewBinding.StationNum2.height + homeViewBinding.StationNum2.marginTop }
-        val StateMovingValue: Int = 120 + 90
-        // direction 1 down, 2 up, 0 refresh button, 3 now button
-        val marginTopChangedVale by lazy {
-            homeViewModel.moveStatePosition(direction, StateMovingValue)
-        }
-        val constraintSet = ConstraintSet()
-        constraintSet.clone(homeViewBinding.homeconstraintlayout)
-        constraintSet.connect(
-            homeViewBinding.youarehere.id,
-            ConstraintSet.TOP,
-            homeViewBinding.horizontalguideline1.id,
-            ConstraintSet.TOP,
-            marginTopChangedVale
-        )
-        constraintSet.applyTo(homeViewBinding.homeconstraintlayout)
-    }
-
-    fun refreshStationList() {
-        homeViewModel.getStationList().observe(viewLifecycleOwner) {
-            homeViewBinding.StationNum1.text = it[0]._stationName.get()
-            homeViewBinding.StationNum2.text = it[1]._stationName.get()
-            homeViewBinding.StationNum3.text = it[2]._stationName.get()
-            homeViewBinding.StationNum4.text = it[3]._stationName.get()
-            homeViewBinding.StationNum5.text = it[4]._stationName.get()
-            homeViewBinding.StationNum1.background = it[0]._backgroundColor.get()
-            homeViewBinding.StationNum2.background = it[1]._backgroundColor.get()
-            homeViewBinding.StationNum3.background = it[2]._backgroundColor.get()
-            homeViewBinding.StationNum4.background = it[3]._backgroundColor.get()
-            homeViewBinding.StationNum5.background = it[4]._backgroundColor.get()
-        }
-    }
-
-    fun makeButtonDeletable() {
-        homeViewBinding.StationNum1.setOnLongClickListener {
-            if (!homeViewBinding.startapp.isChecked) {
-                val removedStation = homeViewModel.deleteStation(1)
-                Toast.makeText(
-                    requireContext(),
-                    "Successfully removed" + removedStation._stationName.get(),
-                    Toast.LENGTH_SHORT
-                ).show()
-                refreshStationList()
-                moveStatePosition(0)
-            }
-            true
-
-        }
-        homeViewBinding.StationNum2.setOnLongClickListener {
-            if (!homeViewBinding.startapp.isChecked) {
-                val removedStation = homeViewModel.deleteStation(2)
-                Toast.makeText(
-                    requireContext(),
-                    "Successfully removed" + removedStation._stationName.get(),
-                    Toast.LENGTH_SHORT
-                ).show()
-                refreshStationList()
-                moveStatePosition(0)
-            }
-            true
-        }
-        homeViewBinding.StationNum3.setOnLongClickListener {
-            if (!homeViewBinding.startapp.isChecked) {
-                val removedStation = homeViewModel.deleteStation(3)
-                Toast.makeText(
-                    requireContext(),
-                    "Successfully removed" + removedStation._stationName.get(),
-                    Toast.LENGTH_SHORT
-                ).show()
-                refreshStationList()
-                moveStatePosition(0)
-            }
-            true
-        }
-        homeViewBinding.StationNum4.setOnLongClickListener {
-            if (!homeViewBinding.startapp.isChecked) {
-                val removedStation = homeViewModel.deleteStation(4)
-                Toast.makeText(
-                    requireContext(),
-                    "Successfully removed" + removedStation._stationName.get(),
-                    Toast.LENGTH_SHORT
-                ).show()
-                refreshStationList()
-                moveStatePosition(0)
-            }
-            true
-        }
-        homeViewBinding.StationNum5.setOnLongClickListener {
-            if (!homeViewBinding.startapp.isChecked) {
-                val removedStation = homeViewModel.deleteStation(5)
-                Toast.makeText(
-                    requireContext(),
-                    "Successfully removed" + removedStation._stationName.get(),
-                    Toast.LENGTH_SHORT
-                ).show()
-                refreshStationList()
-                moveStatePosition(0)
-            }
-            true
-        }
-    }
-
-
-
 }

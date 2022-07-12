@@ -43,8 +43,6 @@ class SettingFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val notificationsViewModel =
-            ViewModelProvider(this).get(SettingViewModel::class.java)
 
         _binding = FragmentSettingBinding.inflate(inflater, container, false)
         val root: View = binding.root
@@ -139,10 +137,6 @@ class SettingFragment : Fragment() {
 
                     override fun onNothingSelected(p0: AdapterView<*>?) {
                     }
-                }
-
-                notificationsViewModel.text.observe(viewLifecycleOwner) {
-
                 }
 
                 binding.button.setOnClickListener {

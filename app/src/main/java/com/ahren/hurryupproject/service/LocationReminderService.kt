@@ -96,7 +96,6 @@ class LocationReminderService: Service() {
                 10F,
                 locationListener)
 
-
             val stationReachedChannel = createNotificationChannel(
                 "station_reached_notification",
                 "Station Reached Notification",
@@ -105,7 +104,6 @@ class LocationReminderService: Service() {
 
         }
     }
-
 
     @RequiresApi(Build.VERSION_CODES.O)
     private fun createNotificationChannel(channelId: String, channelName: String, importance: Int, description: String): String{
@@ -119,7 +117,6 @@ class LocationReminderService: Service() {
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-
 
         return super.onStartCommand(intent, flags, startId)
     }
@@ -137,5 +134,4 @@ class LocationReminderService: Service() {
         locationManager.removeUpdates(locationListener)
         super.onDestroy()
     }
-
 }
